@@ -299,13 +299,6 @@ div#___plusone_0 iframe
 	/*font-weight: bold;*/
 	border-left:  1px solid #555;
 
-	/*グラーデーション*/
-	/*background:-webkit-gradient(linear, 0 0, 0 100%, from(rgba(69,123,177,0.5)), to(rgba(34,85,136,1)));
-	background:-webkit-linear-gradient(rgba(69,123,177,0.5), rgba(34,85,136,1));
-	background:-moz-linear-gradient(rgba(69,123,177,0.5), rgba(34,85,136,1));
-	background:-o-linear-gradient(rgba(69,123,177,0.5), rgba(34,85,136,1));
-	background:linear-gradient(rgba(69,123,177,0.5), rgba(34,85,136,1));*/
-	/*background-color: rgb(158, 206, 255);*/
 	/*アニメーション*/
 	-webkit-transition: all 0.5s ease-out;
 	-moz-transition: all 0.5s ease-out;
@@ -387,18 +380,6 @@ div#___plusone_0 iframe
 
 	width: 100%;
 	max-width: 2000px;
-	height: auto;
-}
-#toppic
-{
-	width: 100%;
-	text-align: center;
-	padding: 20px 0;
-}
-#toppic img
-{
-	vertical-align: top;
-	width: 100%;
 	height: auto;
 }
 
@@ -617,7 +598,6 @@ div#___plusone_0 iframe
 	width: 100%;
 
 	background: #2a3240;
-	color: #fff;
 	/*border-top-left-radius: 10px;*/
 	/*border-top-right-radius: 10px;*/
 
@@ -625,6 +605,7 @@ div#___plusone_0 iframe
 	position: relative;
 	z-index: 1;
 	behavior: url("ie-css3.htc");
+	color: #fff;
 }
 .contentsbox h1:before
 {
@@ -685,16 +666,27 @@ div#___plusone_0 iframe
 }
 #linkinpage li:before
 {
-	content: '└';
+	content: '├';
+	padding-right: 5px;
+}
+#linkinpage li:last-child:before
+{
+	content:  "└";
 }
 #linkinpage ul
 {
-	margin: 5px 0 5px 1em;
+	margin: 12px 22px 12px 1em;
 }
-#linkinpage li
+#linkinpage a
 {
 	text-indent: -1.0em;
 	padding-left: 5px;
+	color: #323;
+	text-decoration: none;
+}
+#linkinpage a:hover
+{
+	text-decoration: underline;
 }
 
 
@@ -970,4 +962,134 @@ div#___plusone_0 iframe
 	/*text-indent: 1.5em;*/
 	padding: 3px 0 3px 1.5em;
 	display: block;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/***************************************************************/
+/*汎用*/
+/***************************************************************/
+
+
+/***************************************************************/
+/*freshman.html*/
+/***************************************************************/
+#toppic
+{
+	width: 100%;
+	text-align: center;
+	padding: 20px 0;
+}
+#toppic img
+{
+	vertical-align: top;
+	width: 100%;
+	height: auto;
+}
+#mc-main #welcomeMessage p
+{
+	text-indent: 1em;
+	margin-top: 5px;
+	margin-bottom: 0px;
+}
+#mc-main #welcomeMessage p:first-of-type
+{
+	margin-top: 12px;
+}
+#mc-main #welcomeMessage span
+{
+	float: right;
+	margin: 12px 22px 12px 0px;
+}
+#mc-main #welcomeInfo ul
+{
+	margin: 12px 22px 12px 22px;
+	position: relative;
+}
+#welcomeInfo ul li
+{
+	margin-top: 8px;
+}
+#welcomeInfo ul time
+{
+	padding-right: 10px;
+}
+#welcomeInfo ul img
+{
+	position: absolute;
+	height: 40px;
+	width: 40px;
+}
+#welcomeInfo img#fin1
+{
+	top: -10px;
+	left: 100px;
+	-webkit-transform: rotate(30deg);
+	-moz-transform: rotate(30deg);
+	transform: rotate(30deg);
+}
+#welcomeInfo img#fin2
+{
+	top: 20px;
+	left: 105px;
+	-webkit-transform: rotate(10deg);
+	-moz-transform: rotate(10deg);
+	transform: rotate(10deg);
+}
+#welcomeInfo img#fin3
+{
+	top: 60px;
+	left: 95px;
+	-webkit-transform: rotate(20deg);
+	-moz-transform: rotate(20deg);
+	transform: rotate(20deg);
+}
+#welcomeInfo #note
+{
+	border-top: 1px solid #ccc;
+	margin: 0px 22px 12px 22px;
+}
+#welcomeInfo #note p
+{
+	margin: 12px 0 12px 0;
+	text-indent: 1em;
+}
+#clubroomInfo table
+{
+	margin: 12px 0 12px 22px;
+}
+#clubroomInfo table th, #clubroomInfo table td
+{
+	width: 100px;
+	height: 25px;
+	text-align: center;
+	font-weight: normal;
+}
+#clubroomInfo table tr
+{
+	background: #fff;
+}
+#clubroomInfo table th
+{
+	background: #404D54;
+	color: #fff;
+}
+#clubroomInfo table tr th, #clubroomInfo table tr td
+{
+	border-right: 1px solid #000;
+}
+#clubroomInfo table tr th:last-child, #clubroomInfo table tr td:last-child
+{
+	border-right: none;
+}
+#clubroomInfo table tr:first-child th
+{
+	border-bottom: 1px solid #000;
+}
+#admission p
+{
+	text-indent: 1em;
 }

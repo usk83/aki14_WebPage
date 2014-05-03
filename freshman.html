@@ -59,6 +59,7 @@
 <!--[if gte IE 9]><!-->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 <!--<![endif]-->
+<script src="js/jquery.animate-colors.js"></script>
 
 <script src="js/main.js"></script>
 
@@ -152,7 +153,7 @@
 <!--*********************************************************-->
 
 <div id="statusbarArea">
-<div id="statusbar"><div class="center"><span id="statusbarinner">第23回 慶應義塾大学秋祭：HOME</span></div></div>
+<div id="statusbar"><div class="center"><span id="statusbarinner">第23回 慶應義塾大学秋祭：新入生の方へ</span></div></div>
 </div>
 
 
@@ -167,12 +168,14 @@
 <div id="mc-side">
 
 <!-- 非表示/ページ内リンク -->
-<div id="linkinpage" class="contentsbox none">
+<div id="linkinpage" class="contentsbox">
 	<aside>
-		<h1>HOME</h1>
+		<h1>To Freshman</h1>
 		<ul>
-			<li>第23回 慶應義塾大学秋祭公式HPへようこそ！</li>
-			<li>2014年度SFC入学予定の皆さんへ</li>
+			<li><a href="#welcomeMessage">新歓担当より新入生の皆さんへ</a></li>
+			<li><a href="#welcomeInfo">新歓情報</a></li>
+			<li><a href="#admission">入会案内</a></li>
+			<li><a href="#welcomeData">新歓資料</a></li>
 		</ul>
 	</aside>
 </div>
@@ -182,9 +185,9 @@
 	<aside id="mc-topic" class="contentsbox mc-banner">
 		<h1>Topics</h1>
 		<ul>
-			<li class="clearfix"><a href="freshman.html"><img src="img/banner/freshman.png" alt="SFC新入生の皆さんへ" id="hogehoge"></a><span>Lorem ipsum dolor sit amet, consectetur</span></li>
-			<li><a href="https://www.facebook.com/SFCakimatsuri14" target="_blank"><img src="img/banner/facebook.png" alt="Facebook更新中"></a>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, natus a culpa provident laborum officiis temporibus cupiditate nostrum animi reiciendis ipsum ea ab aliquid iure praesentium exercitationem aperiam saepe ducimus!</li>
-			<li><a href="support.html"><img src="img/banner/banner.png" alt="ご協賛広告募集中"></a>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, perspiciatis, libero, minus ipsa nemo quaerat ipsum dignissimos illum quidem culpa blanditiis distinctio architecto eligendi ut mollitia deleniti asperiores assumenda ullam!</li>
+			<li class="clearfix"><a href="freshman.html"><img src="img/banner/freshman.png" alt="SFC新入生の皆さんへ" id="hogehoge"></a><span></span></li>
+			<li><a href="https://www.facebook.com/SFCakimatsuri14" target="_blank"><img src="img/banner/facebook.png" alt="Facebook更新中"></a></li>
+			<li><a href="support.html"><img src="img/banner/banner.png" alt="ご協賛広告募集中"></a></li>
 		</ul>
 	</aside>
 </div>
@@ -206,61 +209,123 @@
 
 <!-- メイン記事 -->
 <div id="mc-main" class="clearfix">
-<!-- welcome message -->
-<section class="contentsbox">
-	<h1>第23回 慶應義塾大学秋祭公式HPへようこそ！</h1>
-	<p>第23回 慶應義塾大学秋祭公式HPへようこそ！！！<br>秋祭公式HPでは、秋祭のコンセプトや企画紹介をはじめ、参加してくださる団体様への案内やご協賛についての情報なども随時配信していく予定です！</p>
-
-	<!-- 開催概要 -->
-	<div id="summary">
-		<h2>開催概要</h2>
-		<p>おかげさまで昨年度も大盛況のうちに終えることができました。厚く御礼申し上げます。<br>今年度で秋祭は第23回を数えます。本年度も、慶應義塾大学秋祭、及び秋祭実行委員会をよろしくお願いします。</p>
-		<!-- 概要 -->
-		<dl>
-			<dt>日時</dt>
-			<dd>10月中旬を予定</dd>
-			<br>
-			<div class="s-list">
-			<dt>場所</dt>
-			<dd>慶應義塾大学湘南藤沢キャンパス</dd>
-			</div>
-			<br>
-			<div id="s-attention" class="s-list">
-			<dt>注意事項</dt><br>
-			<dd>喫煙は指定の喫煙所を除き、禁煙となっています。</dd><br>
-			<dd>お車でのご来場はご遠慮ください。</dd><br>
-			<dd>アルコール飲料の持ち込みは禁止させていただいております。屋台での販売がございますが、購入の際には顔写真付きの身分証が必要となりますのでご了承ください。</dd>
-			</div>
-		</dl>
-	</div>
-
+<!-- 新入生の皆さんへ -->
+<section id="welcomeMessage" class="contentsbox clearfix">
+	<h1>新歓担当より新入生の皆さんへ</h1>
+	<p>新入生の皆さん、初めまして！秋祭実行委員会です！</p>
+	<p>長い受験勉強、お疲れ様でした。</p>
+	<p>新入生の皆さんのことを考えると、秋祭の新歓に行きまくり、暇さえあれば部室に遊びに行っていた１年前の自分を思い出します。(笑) その一方で、「やりたいことがいっぱいある！どのサークルに入ろう？」とそればかり考えて、いろいろなサークルの新歓に足を伸ばしていました。きっと、皆さんも同じではないでしょうか？それならば、１度でも構いません！是非、秋祭の新歓や部室に遊びに来てください！私達にいろいろ質問して、大学生活の不安や疑問を解消すると同時に、秋祭の雰囲気を自らの目で確かめてもらえたらな、と思います。長い受験勉強を耐え抜いて、慶應義塾大学湘南藤沢キャンパスの合格を手にし、大学生活に夢を膨らませながらサークル探しをしている中で、この秋祭実行委員会のページを読んでいるのも、きっと何かのご縁だと思います。このご縁を無駄にしないように！！</p>
+	<p>新入生の皆さんのウキウキしている顔を見るのを、楽しみにしています！</p>
+	<p>では、新歓&amp;部室でお待ちしております。</p>
+	<span>第２３回秋祭実行委員会 新歓担当</span>
 </section>
 
 <!-- お知らせ -->
 
-<!-- 非表示/注目トピック表示エリア -->
-<section class="contentsbox none">
-	<h1>2014年度SFC入学予定の皆さんへ</h1>
-	<p>ようこそSFCへ！！！<br>私達、慶應義塾大学秋祭実行委員会は、一緒に秋祭を作る仲間を募集しています！ちょっとでも興味のある人はぜひ秋祭実行委員会に遊びにきてください！実行委員会一同、心よりお待ちしてます！</p>
+<!-- 新歓情報 -->
+<section id="welcomeInfo" class="contentsbox">
+	<h1>新歓情報</h1>
+	<ul>
+		<li><time datetime="2014-04-07">4/07</time>食事会＠YASSAI MOSSAI</li>
+		<li><time datetime="2014-04-10">4/10</time>食事会＠YASSAI MOSSAI</li>
+		<li><time datetime="2014-04-17">4/17</time>食事会＠YASSAI MOSSAI</li>
+		<img id="fin1" src="img/finish.png" alt="終了">
+		<img id="fin2" src="img/finish.png" alt="終了">
+		<img id="fin3" src="img/finish.png" alt="終了">
+	</ul>
+	<p>来てくれた皆さん、ありがとうございました！</p>
+	<!-- <p>今年もたくさんの仲間増えてうれしいです。新入生も加わり、新体制となった秋祭実行委員会。一同、これからもさらに頑張って突き進んでいきます！</p> -->
+
+	<div id="note">
+		<p>秋祭実行委員会はまだまだ、まだまだまだ新入生を募集しています！今からでも全っ然遅くはありません。毎年、5月になっても新入生は増え続けています。私達と共に秋祭を1から作り上げてみませんか？</p>
+		<p>5月、6月には江ノ島遠足やBBQなどなど、まだまだたくさんの企画を用意しています！少しでも「気になるかも...」という子がいたらぜひ新歓担当まで連絡するか、空き時間に部室にきてください！
+		</p>
+	</div>
+
+	<!-- 部室情報 -->
+	<div id="clubroomInfo">
+		<h2>部室情報</h2>
+		<table>
+			<tr>
+				<th>時間/日</th>
+				<th><time datetime="2014-05-07">5/7(水)</time></th>
+				<th><time datetime="2014-05-08">5/8(木)</time></th>
+				<th><time datetime="2014-05-09">5/9(金)</time></th>
+				<th><time datetime="2014-05-12">5/12(月)</time></th>
+				<th><time datetime="2014-05-13">5/13(火)</time></th>
+			</tr>
+			<tr>
+				<th>1限</th>
+				<td>λ22</td>
+				<td>λ22</td>
+				<td>λ12</td>
+				<td>λ22</td>
+				<td>未定</td>
+			</tr>
+			<tr>
+				<th>2限</th>
+				<td>λ22</td>
+				<td>λ22</td>
+				<td>λ12</td>
+				<td>λ22</td>
+				<td>未定</td>
+			</tr>
+			<tr>
+				<th>3限</th>
+				<td>λ22</td>
+				<td>λ22</td>
+				<td>λ12</td>
+				<td>λ22</td>
+				<td>未定</td>
+			</tr>
+			<tr>
+				<th>4限</th>
+				<td>λ22</td>
+				<td>λ22</td>
+				<td>λ12</td>
+				<td>λ22</td>
+				<td>未定</td>
+			</tr>
+			<tr>
+				<th>5限</th>
+				<td>λ22</td>
+				<td>λ22</td>
+				<td>λ12</td>
+				<td>λ22</td>
+				<td>未定</td>
+			</tr>
+			<tr>
+				<th>6限</th>
+				<td>λ22</td>
+				<td>λ22</td>
+				<td>λ12</td>
+				<td>λ22</td>
+				<td>未定</td>
+			</tr>
+			<tr>
+				<th>7限</th>
+				<td>λ22</td>
+				<td>λ22</td>
+				<td>λ12</td>
+				<td>λ22</td>
+				<td>未定</td>
+			</tr>
+		</table>
+	</div>
+
 </section>
 
-<!-- 連絡先情報 -->
-<section id="mc-address" class="contentsbox clearfix">
-	<h1>Contact</h1>
-	<img src="img/aki14logo-contact.png" width="150px" height="150px" alt="秋祭logo">
-	<address>
-		<h2>秋祭実行委員会</h2>
-		<dl>
-			<dt class="none">住所</dt>
-			<dd>〒252-0882<br><span>神奈川県藤沢市遠藤5322</span></dd><br>
-			<dt>Mail</dt>
-			<dd><script>EncryptEmail();</script></dd><br>
-			<dt>Facebook</dt>
-			<dd><a href="https://www.facebook.com/SFCakimatsuri14" target="_blank">秋祭公式Facebookページ</a></dd><br>
-			<dt>Twitter</dt>
-			<dd><a href="https://twitter.com/akisai_sfc" target="_blank">@akisai_sfc</a></dd>
-		</dl>
-	</address>
+<!-- 入会を希望する方へ -->
+<section id="admission" class="contentsbox">
+	<h1>入会案内</h1>
+	<p>秋祭実行委員会に入会するためには、入会届を出していただく必要があります。入会届に必要事項を記入の上、必ず印鑑を押して、代表、副代表または各局局長に提出してください！</p>
+</section>
+
+<!-- 新歓資料 -->
+<section id="welcomeData" class="contentsbox">
+	<h1>新歓資料</h1>
+	<p>↑上の入会についても資料あった方がいいかも</p>
+	<p>ポスターと冊子</p>
 </section>
 
 </div>
