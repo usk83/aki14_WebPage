@@ -64,6 +64,13 @@ ul,ol
 	list-style: none;
 }
 
+/*h1は太字にしない*/
+/*h2はとりあえずそのままで*/
+h1
+{
+	font-weight: normal;
+}
+
 /*div要素は横に並べる*/
 div
 {
@@ -289,7 +296,7 @@ div#___plusone_0 iframe
 	/*width: 142px;*/
 	height: 52px;
 	text-align: center;
-	font-weight: bold;
+	/*font-weight: bold;*/
 	border-left:  1px solid #555;
 
 	/*グラーデーション*/

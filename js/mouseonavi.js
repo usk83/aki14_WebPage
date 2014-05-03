@@ -9,14 +9,13 @@ $(function()
 		$("#hn-logo img").css("opacity","0.7");
 		$(this).css("background", "#252525");
 		$(this).children("a").css("color","#eee");
-		$(this).children("a").css("font-weight","bold");
 		$("#hn-right a").css("color", "rgba(255, 255, 255, 0.5)");
 	});
 	$("#hn-nav li").mouseout(function()
 	{
 		$("#header-navi").css("background","#252525");
 		$("#hn-logo img").css("opacity","1");
-		$(this).css("background","none")
+		$(this).css("background","none");
 		$("#hn-nav a").css("color","#eee");
 		$("#hn-right a").css("color", "#fff");
 	});
