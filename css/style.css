@@ -267,7 +267,7 @@ div#___plusone_0 iframe
 	width: 142px;
 	height: 52px;
 	vertical-align: middle;
-	border-left:  1px solid #555;
+	/*border-left:  1px solid #555;*/
 }
 #hn-logo img
 {
@@ -332,9 +332,7 @@ div#___plusone_0 iframe
 	text-align: center;
 	width: 141px;
 	border-left: 1px solid #555;
-	border-right: 1px solid #555;
-
-	/*vertical-align: middle;*/
+	/*border-right: 1px solid #555;*/
 }
 #hn-right span
 {
@@ -397,11 +395,11 @@ div#___plusone_0 iframe
 	text-align: center;
 	padding: 20px 0;
 }
-#toppic p
+#toppic img
 {
+	vertical-align: top;
 	width: 100%;
-	height: 260px;
-	background: #ebedee;
+	height: auto;
 }
 
 
@@ -840,7 +838,7 @@ div#___plusone_0 iframe
 	padding-left: 1em;
 }
 
-div#mc-facebook.contentsbox
+#mc-main div#mc-facebook.contentsbox
 {
 	width: 524px;
 	padding-bottom: 5px;
@@ -849,15 +847,12 @@ div#mc-facebook.contentsbox
 	border-top-left-radius: 11px;
 	border-top-right-radius: 11px;
 }
-div#twitter.contentsbox
+#mc-main div#twitter.contentsbox
 {
 	width: 340px;
 	/*margin-left: 18px;*/
 	margin-right: 20px;
 	float: right;
-
-	/*background: #333;*/
-	/*border-radius: 0px;*/
 }
 
 #newtheme
