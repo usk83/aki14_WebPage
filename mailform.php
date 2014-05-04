@@ -34,7 +34,9 @@
 $site_top = "http://akimatsuri.sfc.keio.ac.jp/";
 
 // 管理者メールアドレス ※メールを受け取るメールアドレス(複数指定する場合は「,」で区切る)
-$to = "aki14_contact@googlegroups.com";
+// $to = "aki14_contact@googlegroups.com";
+$to = "b_b_sprouts_from_dark@yahoo.co.jp";
+
 
 //フォームのメールアドレス入力箇所のname属性の値（メール形式チェックに使用。※2重アドレスチェック導入時にも使用）
 $Email = "Email";
@@ -93,7 +95,7 @@ $remail = 1;
 
 // 自動返信メールの送信者欄に表示される名前
 // ※自動返信メールの送信者名が文字化けする場合ここは空に
-$refrom_name = "秋祭実行委員会";
+$refrom_name = "慶應義塾大学秋祭実行委員会";
 
 // 差出人に送信確認メールを送る場合のメールのタイトル（上記で1を設定した場合のみ）
 $re_subject = "お問い合わせ承りました";
@@ -188,7 +190,7 @@ foreach($_POST as $key=>$val) {
 	if($val == "confirm_submit") $sendmail = 1;
 	if($key == $Email && $mail_check == 1){
 		if(!checkMail($val)){
-					$errm .= "<p class=\"error_messe\">「".$key."」はメールアドレスの形式が正しくありません。</p>\n";
+					$errm .= "<p class=\"error_messe\">「".$key."」の形式が正しくありません。</p>\n";
 					$empty_flag = 1;
 		}else{
 			$post_mail = h($val);
@@ -228,7 +230,7 @@ if($esse == 1) {
 	}
 }
 // 管理者宛に届くメールの編集
-$body=$subject."が届きました\n\n";
+$body=$subject."がありました\n\n";
 $body.="＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝\n\n";
 foreach($_POST as $key=>$val) {
 
@@ -325,74 +327,67 @@ else if($confirmDsp == 1){
 <html lang="ja">
 	<head>
 		<meta charset="utf-8">
-		<title>お問い合わせ確認画面</title>
-		<style>
-			body{
-				color:#666;
-				font-size:90%;
-				line-height:120%;
-			}
-			table{
-				width:98%;
-				margin:0 auto;
-				border-collapse:collapse;
-			}
-			td{
-				border:1px solid #ccc;
-				padding:5px;
-			}
-			td.l_Cel{
-				width:15%;
-			}
-			p.error_messe{
-				margin:5px 0;
-				color:red;
-			}
-		</style>
+		<title>お問い合わせ内容確認</title>
+		<link rel="stylesheet" href="css/html5reset-1.6.1.css">
+		<link rel="stylesheet" href="css/style.css">
 	</head>
-<body>
-
+<body id="mailform">
+<header>
+	<div id="toppic">
+		<img src="img/toppicture_contact.jpg" alt="お問い合わせ">
+	</div>
+</header>
 	<!-- ▼************ 送信内容表示部 ************▼ -->
+<section id="container">
+<div class="contentsbox">
+	<h1>お問い合わせ内容確認</h1>
 	<?php if($empty_flag == 1){ ?>
-	<div align="center"><h3>入力にエラーがあります。下記をご確認の上「戻る」ボタンにて修正をお願い致します。</h3><?php echo $errm; ?><br><br><input type="button" value=" 前画面に戻る " onClick="history.back()"></div>
+	<div id="inputCheck">
+		<p>入力にエラーがあります。下記をご確認の上「修正」ボタンより前のページに戻って修正をお願いします。</p>
+		<?php echo $errm; ?>
+		<input type="button" value=" 修正 " onClick="history.back()">
+	</div>
 	<?php
 			}else{
 	?>
-	<div align="center">以下の内容で間違いがなければ、「送信する」ボタンを押してください。</div><br><br>
-	<form action="<?php echo $file_name; ?>" method="POST">
-	<table>
-	<?php
-	foreach($_POST as $key=>$val) {
-		$out = '';
-		if(is_array($val)){
-		foreach($val as $item){
-		$out .= $item . ',';
-		}
-		if(substr($out,strlen($out) - 1,1) == ',') {
-		$out = substr($out, 0 ,strlen($out) - 1);
-		}
-	 }
-		else { $out = $val; }//チェックボックス（配列）追記ここまで
-		if(get_magic_quotes_gpc()) { $out = stripslashes($out); }
-		$out = h($out);
-		$out=nl2br($out);//※追記 改行コードを<br>タグに変換
-		$key = h($key);
-		print("<tr><td class=\"l_Cel\">".$key."</td><td>".$out);
-		$out=str_replace("<br />","",$out);//※追記 メール送信時には<br>タグを削除
-	?>
-	<input type="hidden" name="<?php echo $key; ?>" value="<?php echo $out; ?>">
-	<?php
-		print("</td></tr>\n");
-	}
-	?>
-	</table><br>
-	<div align="center"><input type="hidden" name="mail_set" value="confirm_submit">
-	<input type="hidden" name="httpReferer" value="<?php echo $_SERVER['HTTP_REFERER'] ;?>">
-	<input type="submit" value="  送信する  ">
-	<input type="button" value="前画面に戻る" onClick="history.back()">
+	<div id="inputCheck">
+		<p>以下の内容で間違いがなければ、「送信する」ボタンを押してください。</p>
+		<form action="<?php echo $file_name; ?>" method="POST">
+			<table>
+			<?php
+			foreach($_POST as $key=>$val) {
+				$out = '';
+				if(is_array($val)){
+				foreach($val as $item){
+				$out .= $item . ',';
+				}
+				if(substr($out,strlen($out) - 1,1) == ',') {
+				$out = substr($out, 0 ,strlen($out) - 1);
+				}
+			 }
+				else { $out = $val; }//チェックボックス（配列）追記ここまで
+				if(get_magic_quotes_gpc()) { $out = stripslashes($out); }
+				$out = h($out);
+				$out=nl2br($out);//※追記 改行コードを<br>タグに変換
+				$key = h($key);
+				print("<tr><td class=\"l_Cel\">".$key."</td><td>".$out);
+				$out=str_replace("<br />","",$out);//※追記 メール送信時には<br>タグを削除
+			?>
+			<input type="hidden" name="<?php echo $key; ?>" value="<?php echo $out; ?>">
+			<?php
+				print("</td></tr>\n");
+			}
+			?>
+			</table><br>
+			<div align="center"><input type="hidden" name="mail_set" value="confirm_submit">
+			<input type="hidden" name="httpReferer" value="<?php echo $_SERVER['HTTP_REFERER'] ;?>">
+			<input type="submit" value="送信する">
+			<input type="button" value="修正" onClick="history.back()">
+			</div>
+		</form>
+		<?php } ?>
 	</div>
-	</form>
-	<?php } ?>
+</section>
 	<!-- ▲ *********** 送信内容確認部 ************ ▲-->
 
 <!-- ▼ Footerその他コンテンツなど※編集可 ▼ -->
@@ -418,21 +413,40 @@ if(($jumpPage == 0 && $sendmail == 1) || ($jumpPage == 0 && ($confirmDsp == 0 &&
 <html lang="ja">
 	<head>
 		<meta charset="utf-8">
-		<title>お問い合わせ完了画面</title>
+		<title>お問い合わせ完了</title>
+		<link rel="stylesheet" href="css/html5reset-1.6.1.css">
+		<link rel="stylesheet" href="css/style.css">
+		<meta http-equiv="refresh" content="5; url=http://akimatsuri.sfc.keio.ac.jp/">
 	</head>
-	<body>
-		<div align="center">
-		<?php if($empty_flag == 1){ ?>
-		<h3>入力にエラーがあります。下記をご確認の上「戻る」ボタンにて修正をお願い致します。</h3><?php echo $errm; ?><br><br><input type="button" value=" 前画面に戻る " onClick="history.back()">
-		<?php
-			}else{
-		?>
-		送信ありがとうございました。<br>
-		送信は正常に完了しました。<br><br>
-		<a href="<?php echo $site_top ;?>">トップページへ戻る⇒</a>
+<body id="mailform">
+<header>
+	<div id="toppic">
+		<img src="img/toppicture_contact.jpg" alt="お問い合わせ">
+	</div>
+</header>
+
+
+<section id="container">
+<div class="contentsbox">
+	<h1>お問い合わせ完了</h1>
+	<?php if($empty_flag == 1){ ?>
+		<div id="inputCheck">
+			<p>入力にエラーがあります。下記をご確認の上「修正」ボタンより前のページに戻って修正をお願いします。</p>
+			<?php echo $errm; ?>
+			<input type="button" value=" 修正 " onClick="history.back()">
 		</div>
-		<!--  CV率を計測する場合ここにAnalyticsコードを貼り付け -->
-	</body>
+	<?php
+		}else{
+	?>
+	<p>
+		ご送信ありがとうございます。お問い合わせを承りました。<br>
+		ご入力されたメールアドレスに確認メールを送信しましたので、ご確認ください。
+	</p>
+	<p id="refresh5">5秒後にトップページへ移動します。移動しない場合は<a href="http://akimatsuri.sfc.keio.ac.jp/">こちら</a></p>
+</div>
+</section>
+
+</body>
 </html>
 <?php
 /* ▲▲▲送信完了画面のレイアウト※編集可 ※送信完了後に指定のページに移動しない場合のみ表示▲▲▲  */

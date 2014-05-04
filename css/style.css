@@ -90,7 +90,6 @@ body
 	color: #323;
 
 	width: 100%;
-	min-width: 1280px;
 
 	background: #fff;
 	background-image:url(../img/bg.png);
@@ -1205,3 +1204,171 @@ div#___plusone_0 iframe
 	text-indent: 1em;
 }
 
+
+/***************************************************************/
+/*mailform.php*/
+/***************************************************************/
+/*body
+{
+	color:#666;
+}
+table
+{
+	width:98%;
+	margin:0 auto;
+	border-collapse:collapse;
+}
+td
+{
+	border:1px solid #ccc;
+	padding:5px;
+}
+td.l_Cel
+{
+	width:15%;
+}
+p.error_messe
+{
+	margin:5px 0;
+	color:red;
+}*/
+#mailform ,#mailfrom header
+{
+	width: 100%;
+	min-width: 600px;
+}
+#mailform header #toppic
+{
+	width: 100%;
+}
+#mailform header #toppic img
+{
+	width: 100%;
+	max-width: 1280px;
+	height: auto;
+	margin: 0 auto;
+}
+#mailform #container
+{
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+
+	padding: 0 20px;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#mailform .contentsbox
+{
+	width: 100%;
+	max-width: 1280px;
+	min-width: 600px;
+	margin: 0 auto;
+	border-radius: 10px;
+	background: rgb(235, 237, 238);
+
+	behavior: url("ie-css3.htc");
+}
+#inputCheck
+{
+	width: 100%;
+}
+#inputCheck p:first-child
+{
+	margin-bottom: 20px;
+}
+#inputCheck p.error_messe
+{
+	text-indent: 1em;
+}
+#inputCheck p.error_messe:before
+{
+	content: "・";
+	padding-right: 5px;
+}
+#inputCheck input
+{
+	background: #fff;
+	border: 1px solid #EBEDEE;
+	font-size: 1em;
+	cursor: pointer;
+	border-radius: 5px;
+}
+#inputCheck input[type=button]
+{
+	/*margin: 8px 22px 12px 22px;*/
+	margin: 12px 22px 15px 22px;
+	padding: 0;
+	height: 26px;
+	width: 60px;
+
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+#inputCheck input[type=button]:hover
+{
+	border: 1px solid #2A3240;
+}
+#inputCheck input[type=submit]
+{
+	margin: 12px 0px 15px 0px;
+	padding: 0;
+	height: 26px;
+	width: 90px;
+
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+#inputCheck input[type=submit]:hover
+{
+	border: 1px solid #2A3240;
+}
+#inputCheck form
+{
+	width: 100%;
+	padding: 0px 22px;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#inputCheck table
+{
+	/*margin: 12px 22px;*/
+	margin: 12px 0px;
+	width: 100%;
+}
+#inputCheck table td
+{
+	background: #fff;
+	padding: 10px 15px;
+	display: table-cell;
+	width: 100%;
+	max-width: 986px;
+	word-wrap: break-word;
+}
+#inputCheck table .l_Cel
+{
+	background: #404D54;
+	color: #fff;
+	width: 150px;
+}
+#inputCheck table tr
+{
+	width: 100%;
+	display: table;
+	table-layout: fixed;
+	border-bottom: 1px solid #555555;
+}
+#inputCheck table tr:last-child
+{
+	border-bottom: none;
+}
+#refresh5 a
+{
+	text-decoration: none;
+}
