@@ -1020,6 +1020,7 @@ div#___plusone_0 iframe
 {
 	opacity: 0.6;
 	border: 1px solid #F5F7F8;
+	border-radius: 6px;
 
 /*	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -1057,9 +1058,9 @@ div#___plusone_0 iframe
 {
 	top: 20px;
 	left: 30px;
-	-webkit-transform: rotate(-10deg);
-	-moz-transform: rotate(-10deg);
-	transform: rotate(-10deg);
+	-webkit-transform: rotate(-8deg);
+	-moz-transform: rotate(-8deg);
+	transform: rotate(-8deg);
 
 	-webkit-transition: all 0.5s ease-out;
 	-moz-transition: all 0.5s ease-out;
@@ -1069,9 +1070,9 @@ div#___plusone_0 iframe
 {
 	top: 80px;
 	left: 170px;
-	-webkit-transform: rotate(15deg);
-	-moz-transform: rotate(15deg);
-	transform: rotate(15deg);
+	-webkit-transform: rotate(10deg);
+	-moz-transform: rotate(10deg);
+	transform: rotate(10deg);
 
 	-webkit-transition: all 0.5s ease-out;
 	-moz-transition: all 0.5s ease-out;
@@ -1079,7 +1080,7 @@ div#___plusone_0 iframe
 }
 #mc-topic li:nth-of-type(3)
 {
-	top: 130px;
+	top: 140px;
 	left: 40px;
 	-webkit-transform: rotate(5deg);
 	-moz-transform: rotate(5deg);
@@ -1091,8 +1092,8 @@ div#___plusone_0 iframe
 }
 #mc-topic img
 {
-	width: 120px;
-	height: 70px;
+	width: auto;
+	height: auto;
 	vertical-align: top;
 }
 #mc-topic li span
