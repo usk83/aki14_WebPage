@@ -720,88 +720,6 @@ div#___plusone_0 iframe
 {
 	margin-top: 20px;
 }
-#mc-topic
-{
-	background: transparent!important;
-	overflow: hidden;
-}
-#mc-topic ul
-{
-	width: 310px;
-	height: 220px;
-	border: 15px solid #F5F7F8;
-	padding: 0;
-	position: relative;
-	background: rgba(255, 255, 255, 0.8);
-}
-#mc-topic li
-{
-	position: absolute;
-	padding: 0;
-}
-#mc-topic li img
-{
-	opacity: 0.6;
-	border: 1px solid #F5F7F8;
-
-/*	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;*/
-
-	-webkit-transition: all 0.5s ease-out;
-	-moz-transition: all 0.5s ease-out;
-	transition: all 0.5s ease-out;
-}
-#mc-topic li img:hover
-{
-	opacity: 1;
-	border-color: #2A3240;
-}
-#mc-topic li:nth-of-type(1)
-{
-	top: 20px;
-	left: 30px;
-	-webkit-transform: rotate(-10deg);
-	-moz-transform: rotate(-10deg);
-	transform: rotate(-10deg);
-}
-#mc-topic li:nth-of-type(2)
-{
-	top: 80px;
-	left: 170px;
-	-webkit-transform: rotate(15deg);
-	-moz-transform: rotate(15deg);
-	transform: rotate(15deg);
-}
-#mc-topic li:nth-of-type(3)
-{
-	top: 130px;
-	left: 40px;
-	-webkit-transform: rotate(5deg);
-	-moz-transform: rotate(5deg);
-	transform: rotate(5deg);
-}
-#mc-topic img
-{
-	width: 120px;
-	height: 70px;
-	vertical-align: top;
-}
-#mc-topic li span
-{
-	padding: 0;
-	margin: 0;
-	display: inline-block;
-}
-#hogehoge
-{
-	display: inline-block;
-	float: left;
-}
-#mc-topic li
-{
-	/*vertical-align: top;*/
-}
 
 /*中央メイン*/
 #summary
@@ -1046,12 +964,7 @@ div#___plusone_0 iframe
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 /***************************************************************/
-/*汎用*/
-/***************************************************************/
-
-
-/***************************************************************/
-/*freshman.html*/
+/*詳細ページ*/
 /***************************************************************/
 #toppic
 {
@@ -1078,7 +991,115 @@ div#___plusone_0 iframe
 {
 	margin-top: 20px;
 }
+#mc-topic
+{
+	background: transparent!important;
+	overflow: hidden;
+}
+#mc-topic ul
+{
+	width: 310px;
+	height: 220px;
+	border: 15px solid #F5F7F8;
+	padding: 0;
+	position: relative;
+	background: rgba(255, 255, 255, 0.8);
+}
+#mc-topic li
+{
+	position: absolute;
+	padding: 0;
+}
+#mc-topic li
+{
+	opacity: 0.6;
+	border: 1px solid #F5F7F8;
 
+/*	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;*/
+
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+
+}
+#mc-topic li:hover
+{
+	opacity: 1;
+	border-color: #2A3240;
+}
+#mc-topic li:nth-of-type(1):hover
+{
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+#mc-topic li:nth-of-type(2):hover
+{
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+#mc-topic li:nth-of-type(3):hover
+{
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+#mc-topic li:nth-of-type(1)
+{
+	top: 20px;
+	left: 30px;
+	-webkit-transform: rotate(-10deg);
+	-moz-transform: rotate(-10deg);
+	transform: rotate(-10deg);
+
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+#mc-topic li:nth-of-type(2)
+{
+	top: 80px;
+	left: 170px;
+	-webkit-transform: rotate(15deg);
+	-moz-transform: rotate(15deg);
+	transform: rotate(15deg);
+
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+#mc-topic li:nth-of-type(3)
+{
+	top: 130px;
+	left: 40px;
+	-webkit-transform: rotate(5deg);
+	-moz-transform: rotate(5deg);
+	transform: rotate(5deg);
+
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+#mc-topic img
+{
+	width: 120px;
+	height: 70px;
+	vertical-align: top;
+}
+#mc-topic li span
+{
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+}
+
+
+/***************************************************************/
+/*freshman.html*/
+/***************************************************************/
 #mc-main #welcomeMessage p
 {
 	text-indent: 1em;
