@@ -142,34 +142,37 @@ $(function()
 // =====================================================================
 $(function(){
 	// #で始まるアンカーをクリックした場合に処理
-	$("a[href^=#], a[href != '#pagetop']").click(function() {
-		// スクロールの速度
-		var speed = 400; // ミリ秒
-		// アンカーの値取得
-		var href= $(this).attr("href");
-		// 移動先を取得
-		var target = $(href === "#" || href === "" ? 'html' : href);
-		// 移動先を数値で取得
-		var position = target.offset().top - 52;
-		// スムーススクロール
-		$('body,html').animate({scrollTop:position}, speed, 'swing');
+	$("a[href^=#]").click(function() {
+		if($(this).attr("href") != "#header")
+		{
+			// スクロールの速度
+			var speed = 400; // ミリ秒
+			// アンカーの値取得
+			var href= $(this).attr("href");
+			// 移動先を取得
+			var target = $(href === "#" || href === "" ? 'html' : href);
+			// 移動先を数値で取得
+			var position = target.offset().top - 52;
+			// スムーススクロール
+			$('body,html').animate({scrollTop:position}, speed, 'swing');
 
-		target.find("h1").animate(
-		{
-			'color': '#5574CA'
-		},
-		{
-			'duration': 200
-		})
-		.animate(
-		{
-			'color': '#fff'
-		},
-		{
-			'duration': 600
-		});
+			target.find("h1").animate(
+			{
+				'color': '#5574CA'
+			},
+			{
+				'duration': 200
+			})
+			.animate(
+			{
+				'color': '#fff'
+			},
+			{
+				'duration': 600
+			});
 
-		return false;
+			return false;
+		}
 	});
 });
 
@@ -182,10 +185,10 @@ $(function()
 	var topBtn = $('#pagetop');
 	topBtn.stop().animate({'bottom' : '-60px'}, 200);
 	var showFlag = false;
-	//スクロールが100に達したらボタン表示
+	//スクロールが200に達したらボタン表示
 	$(window).scroll(function ()
 	{
-		if ($(this).scrollTop() > 100)
+		if ($(this).scrollTop() > 200)
 		{
 			if (showFlag === false)
 			{
@@ -198,6 +201,7 @@ $(function()
 			if (showFlag)
 			{
 				showFlag = false;
+				topBtn.children("a").css("background", "#666");
 				topBtn.stop().animate({'bottom' : '-60px'}, 200);
 			}
 		}
@@ -205,7 +209,26 @@ $(function()
 	//スクロールしてトップ
 	topBtn.click(function ()
 	{
-		$('body,html').animate({scrollTop: 0}, 500);
+		if(showFlag)
+		{
+			$('body,html').animate({scrollTop: 0}, 500);
+		}
 		return false;
 	});
+	topBtn.children("a").hover(
+		function()
+		{
+			if(showFlag)
+			{
+				$(this).css("background", "#999");
+			}
+		},
+		function()
+		{
+			if(showFlag)
+			{
+				$(this).css("background", "#666");
+			}
+		}
+	);
 });

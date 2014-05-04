@@ -4,10 +4,10 @@ $(function()
 	var topBtn = $('#pagetop');
 	topBtn.stop().animate({'bottom' : '-60px'}, 200);
 	var showFlag = false;
-	//スクロールが100に達したらボタン表示
+	//スクロールが200に達したらボタン表示
 	$(window).scroll(function ()
 	{
-		if ($(this).scrollTop() > 100)
+		if ($(this).scrollTop() > 200)
 		{
 			if (showFlag === false)
 			{
@@ -20,6 +20,7 @@ $(function()
 			if (showFlag)
 			{
 				showFlag = false;
+				topBtn.children("a").css("background", "#666");
 				topBtn.stop().animate({'bottom' : '-60px'}, 200);
 			}
 		}
@@ -27,7 +28,26 @@ $(function()
 	//スクロールしてトップ
 	topBtn.click(function ()
 	{
-		$('body,html').animate({scrollTop: 0}, 500);
+		if(showFlag)
+		{
+			$('body,html').animate({scrollTop: 0}, 500);
+		}
 		return false;
 	});
+	topBtn.children("a").hover(
+		function()
+		{
+			if(showFlag)
+			{
+				$(this).css("background", "#999");
+			}
+		},
+		function()
+		{
+			if(showFlag)
+			{
+				$(this).css("background", "#666");
+			}
+		}
+	);
 });
