@@ -202,6 +202,7 @@ $(function()
 			{
 				showFlag = false;
 				topBtn.children("a").css("background", "#666");
+				topBtn.children("a").css("opacity", "0.6");
 				topBtn.stop().animate({'bottom' : '-60px'}, 200);
 			}
 		}
@@ -221,6 +222,7 @@ $(function()
 			if(showFlag)
 			{
 				$(this).css("background", "#999");
+				$(this).css("opacity", "1");
 			}
 		},
 		function()
@@ -228,6 +230,7 @@ $(function()
 			if(showFlag)
 			{
 				$(this).css("background", "#666");
+				$(this).css("opacity", "0.6");
 			}
 		}
 	);
