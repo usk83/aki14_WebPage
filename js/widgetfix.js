@@ -1,20 +1,27 @@
-$(function()
+$(window).load(function()
 {
-	$(window).load(function()
+	function widgetFix()
 	{
-		// facebookの上の角を丸める
+		var twFrame = $('iframe.twitter-timeline');
+		// if (twFrame.length)
+		if(twFrame.contents().find(".root.twitter-timeline").attr('data-profile-id'))
+		{
+			// Twitterの角を丸める
+			twFrame.contents().find(".root.twitter-timeline").css('border-radius', '10px');
+			// Twitterフッターの微調整
+			twFrame.contents().find(".timeline-footer").css({
+				"border-bottom-left-radius": "9px",
+				"border-bottom-right-radius": "9px"
+			});
+		}
+		else
+		{
+			setTimeout(widgetFix, 500);
+		}
 		$("#mc-fb-iframe").css({
 			"border-top-left-radius": "10px",
 			"border-top-right-radius": "10px"
 		});
-		// Twitterの角を丸める
-		$("#twitter-widget-1").contents().find(".root").css({
-			"border-radius": "10px"
-		});
-		// Twitterフッターの微調整
-		$("#twitter-widget-1").contents().find(".timeline-footer").css({
-			"border-bottom-left-radius": "9px",
-			"border-bottom-right-radius": "9px"
-		});
-	});
+	}
+	widgetFix();
 });

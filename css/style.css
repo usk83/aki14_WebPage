@@ -675,7 +675,7 @@ div#___plusone_0 iframe
 }
 #linkinpage ul
 {
-	margin: 12px 22px 12px 1em;
+	padding: 12px 22px 12px 1em;
 }
 #linkinpage a
 {
@@ -989,6 +989,20 @@ div#___plusone_0 iframe
 	width: 100%;
 	height: auto;
 }
+
+#mc-side #twitter
+{
+	margin-top: 20px;
+}
+#mc-side #mc-facebook
+{
+	margin-top: 20px;
+}
+#mc-side #mc-topic
+{
+	margin-top: 20px;
+}
+
 #mc-main #welcomeMessage p
 {
 	text-indent: 1em;
@@ -1059,7 +1073,7 @@ div#___plusone_0 iframe
 }
 #clubroomInfo table
 {
-	margin: 12px 0 12px 22px;
+	margin: 12px 0 15px 22px;
 }
 #clubroomInfo table th, #clubroomInfo table td
 {
