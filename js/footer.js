@@ -142,7 +142,7 @@ $(function()
 // =====================================================================
 $(function(){
 	// #で始まるアンカーをクリックした場合に処理
-	$('a[href^=#]').click(function() {
+	$("a[href^=#], a[href != '#pagetop']").click(function() {
 		// スクロールの速度
 		var speed = 400; // ミリ秒
 		// アンカーの値取得
@@ -169,6 +169,43 @@ $(function(){
 			'duration': 600
 		});
 
+		return false;
+	});
+});
+
+// pagetop.js
+// =====================================================================
+// ページトップ用
+// =====================================================================
+$(function()
+{
+	var topBtn = $('#pagetop');
+	topBtn.stop().animate({'bottom' : '-60px'}, 200);
+	var showFlag = false;
+	//スクロールが100に達したらボタン表示
+	$(window).scroll(function ()
+	{
+		if ($(this).scrollTop() > 100)
+		{
+			if (showFlag === false)
+			{
+				showFlag = true;
+				topBtn.stop().animate({'bottom' : '20px'}, 200);
+			}
+		}
+		else
+		{
+			if (showFlag)
+			{
+				showFlag = false;
+				topBtn.stop().animate({'bottom' : '-60px'}, 200);
+			}
+		}
+	});
+	//スクロールしてトップ
+	topBtn.click(function ()
+	{
+		$('body,html').animate({scrollTop: 0}, 500);
 		return false;
 	});
 });

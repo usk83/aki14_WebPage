@@ -975,6 +975,30 @@ div#___plusone_0 iframe
 	vertical-align: middle;
 }
 
+#pagetop
+{
+	position: fixed;
+	bottom: -100px;
+	right: 20px;
+	font-size: 0.9em;
+	z-index: 100;
+}
+#pagetop a
+{
+	background: #666;
+	text-decoration: none;
+	color: #fff;
+	width: 100px;
+	padding: 30px 0;
+	text-align: center;
+	display: block;
+	border-radius: 5px;
+}
+#pagetop a:hover
+{
+	text-decoration: none;
+	background: #999;
+}
 
 #footer-sitemap
 {
@@ -1160,3 +1184,4 @@ div#___plusone_0 iframe
 {
 	text-indent: 1em;
 }
+
