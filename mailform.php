@@ -34,8 +34,7 @@
 $site_top = "http://akimatsuri.sfc.keio.ac.jp/";
 
 // 管理者メールアドレス ※メールを受け取るメールアドレス(複数指定する場合は「,」で区切る)
-// $to = "aki14_contact@googlegroups.com";
-$to = "b_b_sprouts_from_dark@yahoo.co.jp";
+$to = "aki14_contact@googlegroups.com";
 
 
 //フォームのメールアドレス入力箇所のname属性の値（メール形式チェックに使用。※2重アドレスチェック導入時にも使用）
@@ -378,7 +377,7 @@ else if($confirmDsp == 1){
 				print("</td></tr>\n");
 			}
 			?>
-			</table><br>
+			</table>
 			<div align="center"><input type="hidden" name="mail_set" value="confirm_submit">
 			<input type="hidden" name="httpReferer" value="<?php echo $_SERVER['HTTP_REFERER'] ;?>">
 			<input type="submit" value="送信する">

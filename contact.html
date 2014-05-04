@@ -153,7 +153,7 @@
 <!--*********************************************************-->
 
 <div id="statusbarArea">
-<div id="statusbar"><div class="center"><span id="statusbarinner">第23回 慶應義塾大学秋祭：新入生の方へ</span></div></div>
+<div id="statusbar"><div class="center"><span id="statusbarinner">第23回 慶應義塾大学秋祭：お問い合わせ</span></div></div>
 </div>
 
 
@@ -168,21 +168,18 @@
 <div id="mc-side">
 
 <!-- 非表示/ページ内リンク -->
-<div id="linkinpage" class="contentsbox">
+<div id="linkinpage" class="contentsbox none">
 	<aside>
-		<h1>To Freshman</h1>
+		<h1>Contact</h1>
 		<ul>
-			<li><a href="#welcomeMessage">新歓担当より新入生の皆さんへ</a></li>
-			<li><a href="#welcomeInfo">新歓情報</a></li>
-			<li><a href="#admission">入会案内</a></li>
-			<li><a href="#welcomeData">新歓資料</a></li>
+			<li><a href="#"></a></li>
 		</ul>
 	</aside>
 </div>
 
 <div>
 	<!-- Topics -->
-	<aside id="mc-topic" class="contentsbox mc-banner">
+	<aside id="mc-topic" class="contentsbox mc-side-first">
 		<h1>Topics</h1>
 			<ul>
 				<li class="clearfix"><a href="freshman.html"><img src="img/banner/freshman.png" alt="SFC新入生の皆さんへ" id="hogehoge"></a><span></span></li>
@@ -207,25 +204,23 @@
 
 
 <!-- メイン記事 -->
-<div id="mc-main" class="clearfix">
-<!-- 問い合わせ -->
-<section id="contactForm" class="contentsbox">
-	<h1>問い合わせ</h1>
-	<div id="enterprise_ask">
-		<p>お問い合わせは下記メールフォームよりお願いいたしします。</p>
+<div id="mc-main"class="clearfix">
+<!-- お問い合わせ -->
+<section class="contentsbox">
+	<h1>問い合わせフォーム</h1>
+	<div id="contactForm">
+		<p>こちらより秋祭実行委員会にお問い合わせいただきます。お問い合わせいただいた内容については適宜対応していきます。</p>
+		<p>以下のフォームを全て適切に埋めた後、送信ボタンを押してください。</p>
 		<form action="mailform.php" method="post">
-			お名前
-			<br>
-			<input type="text" name="お名前" style="width:240px;">
-			<br>
-			E-mail
-			<br>
-			<input type="text" name="Email" style="width:240px;">
-			<br>
-			本文
-			<br>
-			<textarea name="お問い合わせ内容" wrap="soft" style="width:100%; height:240px;"></textarea>
-			<br>
+			<label for="inputName">お名前</label><br>
+			<input type="text" id="inputName" name="お名前" style="width:240px;" placeholder="(例) 慶應 秋子" autofocus><br>
+
+			<label for="inputEmail">E-mail</label><br>
+			<input type="text" id="inputEmail" name="Email" style="width:240px;" placeholder="(例) hoge@xxx.jp"><br>
+
+			<label for="inputDetail">お問い合わせ内容</label><br>
+			<textarea id="inputDetail" name="お問い合わせ内容" wrap="soft" style="width:100%; height:240px;" placeholder="お問い合わせ内容を入力してください"></textarea>
+
 			<input type="submit" name="submit" value="送信">
 		</form>
 	</div>
