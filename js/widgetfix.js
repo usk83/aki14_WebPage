@@ -22,6 +22,13 @@ $(window).load(function()
 			"border-top-left-radius": "10px",
 			"border-top-right-radius": "10px"
 		});
+		// console.log($("#mc-fb-iframe").contents().find('div.pam'));
+		// $("#mc-fb-iframe").contents().find('div.pam').css('padding', '3px 10px');
 	}
 	widgetFix();
 });
+
+function hoge()
+{
+	console.log($("#mc-fb-iframe").contents());
+}
