@@ -375,6 +375,7 @@ div#___plusone_0 iframe
 
 	width: 100%;
 	max-width: 2000px;
+	min-width: 1280px;
 	height: auto;
 }
 
@@ -521,6 +522,7 @@ div#___plusone_0 iframe
 #statusbarArea
 {
 	width: 100%;
+	min-width: 1280px;
 }
 #statusbar
 {
