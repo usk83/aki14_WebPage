@@ -769,9 +769,9 @@ div#___plusone_0 iframe
 {
 	top: 80px;
 	left: 170px;
-	-webkit-transform: rotate(30deg);
-	-moz-transform: rotate(30deg);
-	transform: rotate(30deg);
+	-webkit-transform: rotate(15deg);
+	-moz-transform: rotate(15deg);
+	transform: rotate(15deg);
 }
 #mc-topic li:nth-of-type(3)
 {
