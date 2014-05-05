@@ -39,14 +39,20 @@ $(function()
 		{
 			if(showFlag)
 			{
-				$(this).css("background", "#999");
+				$(this).stop().animate({
+					'background' : '#999',
+					'opacity' : '1'
+				}, 300);
 			}
 		},
 		function()
 		{
 			if(showFlag)
 			{
-				$(this).css("background", "#666");
+				$(this).stop().animate({
+					'background' : '#666',
+					'opacity' : '0.6'
+				}, 300);
 			}
 		}
 	);
