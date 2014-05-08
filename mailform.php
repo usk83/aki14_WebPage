@@ -34,7 +34,7 @@
 $site_top = "http://akimatsuri.sfc.keio.ac.jp/";
 
 // 管理者メールアドレス ※メールを受け取るメールアドレス(複数指定する場合は「,」で区切る)
-$to = "aki14_contact@googlegroups.com";
+$to = "aki14-contact@googlegroups.com";
 
 
 //フォームのメールアドレス入力箇所のname属性の値（メール形式チェックに使用。※2重アドレスチェック導入時にも使用）
@@ -125,7 +125,7 @@ $mailSignature = <<< FOOTER
 ──────────────────────
 慶應義塾大学 秋祭実行委員会
 
-E-mail:aki14_contact@googlegroups.com
+E-mail:aki14-contact@googlegroups.com
 URL: http://akimatsuri.sfc.keio.ac.jp/
 ──────────────────────
 
