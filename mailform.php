@@ -441,7 +441,7 @@ if(($jumpPage == 0 && $sendmail == 1) || ($jumpPage == 0 && ($confirmDsp == 0 &&
 		ご送信ありがとうございます。お問い合わせを承りました。<br>
 		ご入力されたメールアドレスに確認メールを送信しましたので、ご確認ください。
 	</p>
-	<p id="refresh5">5秒後にトップページへ移動します。移動しない場合は<a href="http://akimatsuri.sfc.keio.ac.jp/">こちら</a></p>
+	<p id="refresh5sec">5秒後にトップページへ移動します。移動しない場合は<a href="http://akimatsuri.sfc.keio.ac.jp/">こちら</a></p>
 </div>
 </section>
 
