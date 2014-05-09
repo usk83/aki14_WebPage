@@ -181,10 +181,12 @@ iframe
 	display: inline-block;
 	padding-top: 10px;
 	padding-left: 135px;
+	padding-left: 124px;
 }
 #hf-sns-bar *
 {
 	width: 107px;
+	width: 118px;
 	display: inline-block;
 	float: left;
 }
@@ -277,7 +279,7 @@ div#___plusone_0 iframe
 	vertical-align: top;
 	width: 142px;
 	height: 52px;
-	opacity: 0.85;
+	/*opacity: 0.85;*/
 }
 
 #hn-nav
@@ -695,7 +697,8 @@ div#___plusone_0 iframe
 }
 #linkinpage a:hover
 {
-	text-decoration: underline;
+	/*text-decoration: underline;*/
+	font-weight: bold;
 }
 
 
@@ -849,7 +852,6 @@ div#___plusone_0 iframe
 	width: 100%;
 	height: 29px;
 	color: #eee;
-	/*background: #303030;*/
 	background: #2a3240;
 	font-size: 0.9em;
 }
@@ -925,6 +927,7 @@ div#___plusone_0 iframe
 	text-align: center;
 	display: block;
 	border-radius: 5px;
+	cursor: default;
 }
 #pagetop a:hover
 {
@@ -1202,7 +1205,9 @@ div#___plusone_0 iframe
 }
 #clubroomInfo table th, #clubroomInfo table td
 {
-	width: 100px;
+	/*default*/
+	/*width: 100px;*/
+	width: 90px;
 	height: 25px;
 	text-align: center;
 	font-weight: normal;

@@ -185,6 +185,13 @@ $(function()
 	var topBtn = $('#pagetop');
 	topBtn.stop().animate({'bottom' : '-60px'}, 200);
 	var showFlag = false;
+	if(document.body.scrollTop > 200)
+	{
+		topBtn.children("a").css("cursor", "pointer");
+		showFlag = true;
+		topBtn.stop().animate({'bottom' : '20px'}, 200);
+
+	}
 	//スクロールが200に達したらボタン表示
 	$(window).scroll(function ()
 	{
@@ -192,6 +199,7 @@ $(function()
 		{
 			if (showFlag === false)
 			{
+				topBtn.children("a").css("cursor", "pointer");
 				showFlag = true;
 				topBtn.stop().animate({'bottom' : '20px'}, 200);
 			}
@@ -203,6 +211,7 @@ $(function()
 				showFlag = false;
 				topBtn.children("a").css("background", "#666");
 				topBtn.children("a").css("opacity", "0.6");
+				topBtn.children("a").css("cursor", "default");
 				topBtn.stop().animate({'bottom' : '-60px'}, 200);
 			}
 		}
