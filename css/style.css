@@ -99,6 +99,7 @@ body
 
 	background: #fff;
 	background-image:url(../img/bg.png);
+	background-attachment: fixed;
 	background-repeat:repeat;
 
 	font-family: 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
@@ -850,6 +851,7 @@ div#___plusone_0 iframe
 #footer
 {
 	width: 100%;
+	min-width: 1280px;
 	height: 29px;
 	color: #eee;
 	background: #2a3240;
@@ -1433,6 +1435,11 @@ div#___plusone_0 iframe
 /***************************************************************/
 /*about.html*/
 /***************************************************************/
+#greetings #ourstart
+{
+	font-size: 1.4em;
+}
+
 #logoConceptImg
 {
 	float: left;
