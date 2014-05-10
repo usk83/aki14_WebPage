@@ -42,6 +42,10 @@
 /***************************************************************/
 
 /*リンク文字の設定*/
+a
+{
+	text-decoration: none;
+}
 a:link
 {
 	/*color: #00f;*/
@@ -1254,6 +1258,10 @@ div#___plusone_0 iframe
 {
 	margin: 12px 22px;
 }
+#contactForm label:before
+{
+	content: "◇";
+}
 #contactForm input[type=text]
 {
 	border: none;
@@ -1545,4 +1553,13 @@ section#getto #gettoContents
 #byTrain dd:last-child
 {
 	margin-bottom: 0;
+}
+
+#vicinityMap p span
+{
+	padding-left: 1.5em;
+}
+#vicinityMap iframe
+{
+	margin: 12px 22px 15px 22px;
 }
