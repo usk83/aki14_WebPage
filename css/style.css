@@ -798,11 +798,11 @@ div#___plusone_0 iframe
 {
 	padding-left: 30px;
 	padding-right: 15px;
-	/*padding: 10px 0 10px 20px;*/
 }
 #mc-address dt, dd
 {
 	display: inline-block;
+	font-style: normal;
 }
 #mc-address dt:after
 {
@@ -1438,6 +1438,7 @@ div#___plusone_0 iframe
 #greetings #ourstart
 {
 	font-size: 1.4em;
+	font-style: italic;
 }
 
 #logoConceptImg
