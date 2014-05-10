@@ -65,7 +65,8 @@ a:hover
 }
 
 /*リスト要素の先頭のマーカーをリセット*/
-ul,ol
+/*ul, ol*/
+ul
 {
 	list-style: none;
 }
@@ -689,6 +690,10 @@ div#___plusone_0 iframe
 {
 	padding: 12px 22px 12px 1em;
 }
+#linkinpage ul ul
+{
+	padding: 0px 0px 0px 1em;
+}
 #linkinpage a
 {
 	text-indent: -1.0em;
@@ -793,6 +798,7 @@ div#___plusone_0 iframe
 	padding-left: 10px;
 	padding-bottom: 5px;
 	margin: 0 0 0 15px;
+	font-style: normal;
 }
 #mc-address dl
 {
@@ -1452,4 +1458,91 @@ div#___plusone_0 iframe
 	height: 150px;
 	vertical-align: top;
 	float: left;
+}
+/***************************************************************/
+/*access.html*/
+/***************************************************************/
+section#getto #gettoContents
+{
+	padding: 12px 22px;
+}
+#gettoContents p
+{
+	margin-left: 0;
+	margin-right: 0;
+	text-indent: 0!important;
+}
+#gettoContents h2, #gettoContents h3
+{
+	margin-left: -7px;
+	margin-right: -7px;
+}
+#gettoContents h3
+{
+	border-bottom: 1px solid #555;
+	padding-left: 7px;
+}
+#gettoContents p:first-child
+{
+	margin-top: 0;
+}
+#gettoContents img
+{
+	width: auto;
+	height: auto;
+	margin: 10px 0px 30px 20px;
+}
+#byBus
+{
+	margin-bottom: 30px;
+}
+#byBus li
+{
+	padding-left: 1em;
+	margin-bottom: 10px;
+}
+#byBus li:last-child
+{
+	margin-bottom: 0;
+}
+#byBus li img, #byTrain dd img
+{
+	height: 25px;
+	width: 25px;
+	margin: 0;
+	padding-right: 5px;
+	vertical-align: -4px;
+}
+#byTrain h2
+{
+	margin-bottom: 12px;
+}
+#byTrain dl
+{
+	margin: 12px 0;
+}
+#byTrain dl:last-child
+{
+	margin-bottom: 0;
+}
+#byTrain dt
+{
+	margin-bottom: 5px;
+}
+#byTrain dt:before
+{
+	display: inline-block;
+	content: "＞";
+	font-size: 0.5em;
+	vertical-align: 3px;
+	padding-right: 5px;
+}
+#byTrain dd
+{
+	padding-left: 1em;
+	margin-bottom: 15px;
+}
+#byTrain dd:last-child
+{
+	margin-bottom: 0;
 }

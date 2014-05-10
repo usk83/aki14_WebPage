@@ -172,7 +172,14 @@
 	<aside>
 		<h1>アクセス</h1>
 		<ul>
-			<li><a href="#getto">交通アクセスのご案内</a></li>
+			<li>
+				<a href="#getto">交通アクセスのご案内</a>
+				<ul>
+					<li><a href="#byBus">最寄り駅よりバスのご案内</a></li>
+					<li><a href="#byTrain">最寄り駅までのご案内</a></li>
+				</ul>
+			</li>
+			<li><a href="#vicinityMap">大学周辺地図</a></li>
 		</ul>
 	</aside>
 </div>
@@ -209,57 +216,60 @@
 <!-- comingsoon -->
 <section id="getto" class="contentsbox">
 	<h1>交通アクセスのご案内</h1>
-	<p class="noIndent">秋祭当日は、キャンパスに駐車場のご用意がございません。<br>公共交通機関をご利用の上、ご来場いただきますようご協力お願いします。</p>
-	<img src="img/map.png">
+	<div id="gettoContents">
+		<p>秋祭当日は、キャンパスに駐車場のご用意がございません。<br>公共交通機関をご利用の上、ご来場いただきますようご協力お願いします。</p>
+		<img src="img/map.png">
 
-	<!-- バスや電車のアイコンを使うといい感じかも -->
+		<!-- バスや電車のアイコンを使うといい感じかも -->
 
-	<!-- バス -->
-	<div>
-		<h2>最寄り駅よりバスのご案内</h2>
-		<p>慶應義塾大学 湘南藤沢キャンパスへは湘南台駅、辻堂駅から路線バスが運行しています。</p>
+		<!-- バス -->
+		<!-- liの頭につくアイコンについて、cssの疑似要素でcontentを使いたいところだが、サイズ指定が出来ず、前もってリサイズしておくのでは画像が崩れてしまうので、imgタグを用いる -->
+		<div id="byBus">
+			<h2>最寄り駅よりバスのご案内</h2>
+			<p>慶應義塾大学 湘南藤沢キャンパスへは湘南台駅、辻堂駅から路線バスが運行しています。</p>
 
-		<h3>湘南台駅（小田急江ノ島線・相鉄いずみ野線・横浜市営地下鉄ブルーライン）より</h3>
-		<p>西口出口B付近・1番バス乗り場より、<br>神奈川中央交通バス</p>
-		<ul>
-			<li>湘23系統「慶応大学」行</li>
-			<li>湘24系統「笹久保経由 慶応大学」行</li>
-			<li>湘25系統「急行・慶応大学」行</li>
-		</ul>
-		<p>のいずれかをご利用ください。（所要時間：約15~20分）<br><span>秋祭当日は「慶応大学」にてご降車ください。</span></p>
+			<h3>湘南台駅（小田急江ノ島線・相鉄いずみ野線・横浜市営地下鉄ブルーライン）より</h3>
+			<p>西口出口B付近・1番バス乗り場より、<br>神奈川中央交通バス</p>
+			<ul>
+				<li><img src="img/busIcon.gif" alt="busIcon">湘23系統「慶応大学」行</li>
+				<li><img src="img/busIcon.gif" alt="busIcon">湘24系統「笹久保経由 慶応大学」行</li>
+				<li><img src="img/busIcon.gif" alt="busIcon">湘25系統「急行・慶応大学」行</li>
+			</ul>
+			<p>のいずれかをご利用ください。（所要時間：約15~20分）<br><span>秋祭当日は「慶応大学」にてご降車ください。</span></p>
 
-		<h3>辻堂駅（JR東海道線）より</h3>
-		<p>北口 3番バス乗り場より、<br>神奈川中央交通バス</p>
-		<ul>
-			<li>辻34系統「慶応大学」行</li>
-		</ul>
-		<p>をご利用ください。（所要時間：約25分）<br><span>秋祭当日は「慶応大学」にてご降車ください。</span></p>
+			<h3>辻堂駅（JR東海道線）より</h3>
+			<p>北口 3番バス乗り場より、<br>神奈川中央交通バス</p>
+			<ul>
+				<li><img src="img/busIcon.gif" alt="busIcon">辻34系統「慶応大学」行</li>
+			</ul>
+			<p>をご利用ください。（所要時間：約25分）<br><span>秋祭当日は「慶応大学」にてご降車ください。</span></p>
+		</div>
+		<!-- 電車 -->
+		<div id="byTrain">
+			<h2>最寄り駅までのご案内</h2>
+
+			<h3>湘南台駅まで</h3>
+			<dl>
+				<dt>新宿駅から</dt>
+				<dd><img src="img/trainIcon.gif" alt="trainIcon">小田急江ノ島線（快速急行で約45分）</dd>
+				<dt>藤沢駅から</dt>
+				<dd><img src="img/trainIcon.gif" alt="trainIcon">小田急江ノ島線（約10分）</dd>
+				<dt>横浜駅から</dt>
+				<dd><img src="img/trainIcon.gif" alt="trainIcon">相鉄いずみ野線（快速で約30分）</dd>
+				<dt>戸塚駅から</dt>
+				<dd><img src="img/trainIcon.gif" alt="trainIcon">横浜市営地下鉄ブルーライン（約10分）</dd>
+			</dl>
+			<h3>辻堂駅まで</h3>
+			<dl>
+				<dt>横浜駅から</dt>
+				<dd><img src="img/trainIcon.gif" alt="trainIcon">JR東海道線（約25分）</dd>
+			</dl>
+		</div>
 	</div>
-	<!-- 電車 -->
-	<div>
-		<h2>最寄り駅までのご案内</h2>
-	</div>
-
-	<h2>湘南台駅まで</h2>
-	<dl>
-		<dt>新宿駅から</dt>
-		<dd>小田急江ノ島線（快速急行で約45分）</dd>
-		<dt>藤沢駅から</dt>
-		<dd>小田急江ノ島線（約10分）</dd>
-		<dt>横浜駅から</dt>
-		<dd>相鉄いずみ野線（快速で約30分）</dd>
-		<dt>戸塚駅から</dt>
-		<dd>横浜市営地下鉄ブルーライン（約10分）</dd>
-	</dl>
-	<h2>辻堂駅まで</h2>
-	<dl>
-		<dt>横浜駅から</dt>
-		<dd>JR東海道線（約25分）</dd>
-	</dl>
 </section>
 
 <!-- 周辺地図 -->
-<section id="aroundMap" class="contentsbox">
+<section id="vicinityMap" class="contentsbox">
 	<h1>大学周辺地図</h1>
 	<p>〒252-0882 神奈川県藤沢市遠藤5322<br>慶應義塾大学 湘南藤沢キャンパス</p>
 	<p>Map</p>

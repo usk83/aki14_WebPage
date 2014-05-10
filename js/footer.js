@@ -171,6 +171,24 @@ $(function(){
 				'duration': 600
 			});
 
+			if(target.find("h1")[0] == undefined)
+			{
+				target.find("h2").animate(
+				{
+					'color': '#5574CA'
+				},
+				{
+					'duration': 200
+				})
+				.animate(
+				{
+					'color': '#323'
+				},
+				{
+					'duration': 600
+				});
+			}
+
 			return false;
 		}
 	});
