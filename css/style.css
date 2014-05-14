@@ -1593,3 +1593,39 @@ section#getto #gettoContents
 {
 	margin: 12px 22px 15px 22px;
 }
+/***************************************************************/
+/*event.html*/
+/***************************************************************/
+#missmister img
+{
+	width: 400px;
+	height: 562px;
+	float: left;
+	padding-bottom: 5px;
+}
+#missmister img:last-child
+{
+	margin-left: 38px;
+}
+#entryEnd span
+{
+	display: inline-block;
+	width: 400px;
+	text-align: center;
+	color: #cc0000;
+	float: left;
+}
+#entryEnd span:last-child
+{
+	margin-left: 38px;
+}
+/***************************************************************/
+/*participant.html*/
+/***************************************************************/
+#infoSession p img
+{
+	width: 838px;
+	height: auto;
+	float: left;
+	padding-bottom: 5px;
+}
