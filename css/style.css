@@ -1493,10 +1493,17 @@ div#___plusone_0 iframe
 	margin-left: 1em;
 	text-indent: -1em;
 }
-#outlineContents div:nth-of-type(2) dd:before
+#outlineContents div:nth-of-type(2) img
 {
-	content: "・";
+	vertical-align: top;
 }
+#outlineContents h2
+{
+	margin-top: 20px;
+	margin-left: 0;
+	margin-right: 0;
+}
+
 /***************************************************************/
 /*access.html*/
 /***************************************************************/
