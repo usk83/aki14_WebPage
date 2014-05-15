@@ -646,7 +646,7 @@ div#___plusone_0 iframe
 .contentsbox h1, .contentsbox p, .contentsbox h2, .contentsbox dt, .contentsbox dd
 {
 	/*androidのページの自動調整対策hack*/
-	/*background-image: url(androidhack.gif);*/
+	background-image: url(androidhack.gif);
 }
 
 #mc-main .contentsbox p
@@ -1134,6 +1134,7 @@ div#___plusone_0 iframe
 {
 	float: right;
 	text-indent: 0;
+	margin-top: 0;
 }
 #greetings #greetingfrom span
 {
@@ -1471,7 +1472,11 @@ div#___plusone_0 iframe
 {
 	padding: 12px 22px;
 }
-#outlineContents dt, dd
+#outlineContents dt
+{
+	vertical-align: top;
+}
+#outlineContents dt, #outlineContents dd
 {
 	display: inline-block;
 }
@@ -1479,30 +1484,54 @@ div#___plusone_0 iframe
 {
 	content: "：";
 }
+
 #outlineContents .s-list
 {
 	display: inline-block;
-	margin-top: 2px;
-}
-#outlineContents div:nth-of-type(2)
-{
-	margin-top: 12px;
-}
-#outlineContents div:nth-of-type(2) dd
-{
-	margin-left: 1em;
-	text-indent: -1em;
-}
-#outlineContents div:nth-of-type(2) img
-{
-	vertical-align: top;
-}
-#outlineContents h2
-{
 	margin-top: 20px;
+}
+
+#outlineContents .s-list dt, #outlineContents .s-list dd
+{
+	width: 100%;
+}
+#outlineContents .s-list dt:after
+{
+	content: none;
+}
+#outlineContents .s-list h2
+{
 	margin-left: 0;
 	margin-right: 0;
+	margin-bottom: 12px;
 }
+
+#outlineContents .s-list img
+{
+	padding-left: 5px;
+	float: left;
+	/*vertical-align: top;*/
+}
+#outlineContents .s-list h3
+{
+	padding-left: 5px;
+	border-bottom: 1px solid #aaa;
+	margin-left: 77px;
+}
+#outlineContents .s-list p
+{
+	margin: 10px 5px 10px 82px;
+}
+#outlineContents .s-list p .strong
+{
+	font-weight: bold;
+	color: #E60012;
+}
+#outlineContents .s-list dd:last-child p
+{
+	margin-bottom: 0;
+}
+
 
 /***************************************************************/
 /*access.html*/
