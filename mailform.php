@@ -333,7 +333,7 @@ else if($confirmDsp == 1){
 <body id="mailform">
 <header>
 	<div id="toppic">
-		<img src="img/toppicture_contact.jpg" alt="お問い合わせ">
+		<img src="img/mainpic/toppicture_contact.jpg" alt="お問い合わせ">
 	</div>
 </header>
 	<!-- ▼************ 送信内容表示部 ************▼ -->
@@ -420,7 +420,7 @@ if(($jumpPage == 0 && $sendmail == 1) || ($jumpPage == 0 && ($confirmDsp == 0 &&
 <body id="mailform">
 <header>
 	<div id="toppic">
-		<img src="img/toppicture_contact.jpg" alt="お問い合わせ">
+		<img src="img/mainpic/toppicture_contact.jpg" alt="お問い合わせ">
 	</div>
 </header>
 
