@@ -1253,6 +1253,7 @@ div#___plusone_0 iframe
 	padding: 3px;
 	margin-top: 3px;
 	margin-bottom: 12px;
+	resize: vertical;
 }
 #contactForm input[type=submit]
 {
