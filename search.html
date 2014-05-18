@@ -17,20 +17,20 @@
 <meta name="viewport" content="width=1280px, maximum-scale=1.0, user-scalable=yes">
 
 
-<title>アクセス | 第23回 慶應義塾大学秋祭 公式サイト</title>
+<title>サイト内検索 | 第23回 慶應義塾大学秋祭 公式サイト</title>
 <link rel="stylesheet" href="css/html5reset-1.6.1.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="icon" href="img/icons/favicon.ico" type="image/vnd.microsoft.icon">
 <link rel="apple-touch-icon" href="img/icons/apple-touch-icon.png">
 <meta name="author" content="Yusuke Takahashi">
 <meta name="keywords" content="秋祭,sfc,文化祭">
-<meta name="description" content="秋祭は毎年10月に慶應義塾大学湘南藤沢キャンパスにて行われる文化祭で、今年で23回を数えます。このページでは秋祭当日のキャンパスへのアクセスに関する情報を掲載しています。ぜひ一度チェックしてみてください！">
+<meta name="description" content="秋祭は毎年10月に慶應義塾大学湘南藤沢キャンパスにて行われる文化祭で、今年で23回を数えます。このページでは秋祭公式HP内のページを検索することができます。お探しの情報を検索してみてください。">
 
 <!-- SNSいいね用、facebook用設定 -->
-<meta property="og:title" content="アクセス | 第23回 慶應義塾大学秋祭 公式サイト">
+<meta property="og:title" content="coming soon | 第23回 慶應義塾大学秋祭 公式サイト">
 <meta property="og:type" content="article">
-<meta property="og:url" content="http://akimatsuri.sfc.keio.ac.jp/access.html">
-<meta property="og:description" content="慶應義塾大学秋祭の公式ホームページへようこそ！当日の秋祭へのアクセスはこちらをご覧ください。なお自動車でのご来場はご遠慮いただいています。公共交通機関をご利用ください。">
+<meta property="og:url" content="http://akimatsuri.sfc.keio.ac.jp/search.html">
+<meta property="og:description" content="慶應義塾大学秋祭の公式ホームページへようこそ！このページでは秋祭公式HP内のページを検索することができます。お探しの情報を検索してみてください。">
 
 <meta property="og:site_name" content="第23回 慶應義塾大学秋祭 公式サイト">
 <meta property="og:image" content="http://akimatsuri.sfc.keio.ac.jp/img/ogp.png">
@@ -62,6 +62,7 @@
 
 <script src="js/jquery.animate-colors.js"></script>
 <script src="js/main.js"></script>
+<script src="js/sitesearch.js"></script>
 
 </head>
 <!-- end head -->
@@ -141,7 +142,7 @@
 <!--*********************************************************-->
 
 <div id="toppic">
-	<img src="img/mainpic/toppicture_access.jpg" alt="アクセス">
+	<img src="img/mainpic/toppicture_comingsoon.jpg" alt="サイト内検索">
 </div>
 
 </div>
@@ -153,7 +154,7 @@
 <!--*********************************************************-->
 
 <div id="statusbarArea">
-<div id="statusbar"><div class="center"><span id="statusbarinner">第23回 慶應義塾大学秋祭：アクセス</span></div></div>
+<div id="statusbar"><div class="center"><span id="statusbarinner">第23回 慶應義塾大学秋祭：サイト内検索</span></div></div>
 </div>
 
 
@@ -170,16 +171,9 @@
 <!-- ページ内リンク -->
 <div id="linkinpage" class="contentsbox">
 	<aside>
-		<h1>アクセス</h1>
+		<h1>サイト内検索</h1>
 		<ul>
-			<li>
-				<a href="#getto">交通アクセスのご案内</a>
-				<ul>
-					<li><a href="#byBus">最寄り駅よりバスのご案内</a></li>
-					<li><a href="#byTrain">最寄り駅までのご案内</a></li>
-				</ul>
-			</li>
-			<li><a href="#vicinityMap">大学周辺地図</a></li>
+			<li><a href="#searchinHP">サイト内検索</a></li>
 		</ul>
 	</aside>
 </div>
@@ -213,67 +207,20 @@
 
 <!-- メイン記事 -->
 <div id="mc-main" class="clearfix">
-<!-- comingsoon -->
-<section id="getto" class="contentsbox">
-	<h1>交通アクセスのご案内</h1>
-	<div id="gettoContents">
-		<p>秋祭当日は、基本的にキャンパスに駐車場のご用意はありません。<br>公共交通機関をご利用の上、ご来場いただきますようご協力お願いします。</p>
-		<img src="img/map.png">
+<!-- サイト内検索 -->
+<section id="searchinHP" class="contentsbox">
+	<h1>サイト内検索</h1>
+	<div class="innerContents">
+		<p class="noIndent">検索したい単語を入力してください。（複数単語指定可能）<br>自動で結果が表示されます。結果が表示されない時は、[検索]ボタンを押してください。</p>
+		<form class="sitesearch" method="get" action="search/index.cgi" onsubmit="return sitesearch(this);">
+			<input type="text" name="q" value="" onchange="return sitesearch(this.form);" placeholder="(例) アルコール" autofocus="">
+			<input type="submit" value="検索">
+		</form>
 
-		<!-- バスや電車のアイコンを使うといい感じかも -->
-
-		<!-- バス -->
-		<!-- liの頭につくアイコンについて、cssの疑似要素でcontentを使いたいところだが、サイズ指定が出来ず、前もってリサイズしておくのでは画像が崩れてしまうので、imgタグを用いる -->
-		<div id="byBus">
-			<h2>最寄り駅よりバスのご案内</h2>
-			<p>慶應義塾大学 湘南藤沢キャンパスへは湘南台駅、辻堂駅から路線バスが運行しています。</p>
-
-			<h3>湘南台駅（小田急江ノ島線・相鉄いずみ野線・横浜市営地下鉄ブルーライン）より</h3>
-			<p>西口出口B付近・1番バス乗り場より、<br>神奈川中央交通バス</p>
-			<ul>
-				<li><img src="img/busIcon.gif" alt="busIcon">湘23系統「慶応大学」行</li>
-				<li><img src="img/busIcon.gif" alt="busIcon">湘24系統「笹久保経由 慶応大学」行</li>
-				<li><img src="img/busIcon.gif" alt="busIcon">湘25系統「急行・慶応大学」行</li>
-			</ul>
-			<p>のいずれかをご利用ください。（所要時間：約15~20分）<br><span>秋祭当日は「慶応大学」にてご降車ください。</span></p>
-
-			<h3>辻堂駅（JR東海道線）より</h3>
-			<p>北口 3番バス乗り場より、<br>神奈川中央交通バス</p>
-			<ul>
-				<li><img src="img/busIcon.gif" alt="busIcon">辻34系統「慶応大学」行</li>
-			</ul>
-			<p>をご利用ください。（所要時間：約25分）<br><span>秋祭当日は「慶応大学」にてご降車ください。</span></p>
-		</div>
-		<!-- 電車 -->
-		<div id="byTrain">
-			<h2>最寄り駅までのご案内</h2>
-
-			<h3>湘南台駅まで</h3>
-			<dl>
-				<dt>新宿駅から</dt>
-				<dd><img src="img/trainIcon.gif" alt="trainIcon">小田急江ノ島線（快速急行で約45分）</dd>
-				<dt>藤沢駅から</dt>
-				<dd><img src="img/trainIcon.gif" alt="trainIcon">小田急江ノ島線（約10分）</dd>
-				<dt>横浜駅から</dt>
-				<dd><img src="img/trainIcon.gif" alt="trainIcon">相鉄いずみ野線（快速で約30分）</dd>
-				<dt>戸塚駅から</dt>
-				<dd><img src="img/trainIcon.gif" alt="trainIcon">横浜市営地下鉄ブルーライン（約10分）</dd>
-			</dl>
-			<h3>辻堂駅まで</h3>
-			<dl>
-				<dt>横浜駅から</dt>
-				<dd><img src="img/trainIcon.gif" alt="trainIcon">JR東海道線（約25分）</dd>
-			</dl>
+		<!--検索結果出力エリア-->
+		<div id="search_result">
 		</div>
 	</div>
-	<p class="noIndent"><a href="http://www.sfc.keio.ac.jp/maps.html">慶應義塾大学湘南藤沢キャンパス公式サイト[交通アクセス]</a>からもご確認いただけます。</p>
-</section>
-
-<!-- 周辺地図 -->
-<section id="vicinityMap" class="contentsbox">
-	<h1>大学周辺地図</h1>
-	<p class="noIndent">〒252-0882 神奈川県藤沢市遠藤5322<br><span>慶應義塾大学 湘南藤沢キャンパス</span></p>
-	<iframe src="https://mapsengine.google.com/map/embed?mid=zu3791ZSQ1xA.kO71s1jhOV4g" width="838" height="480"></iframe>
 </section>
 
 </div>

@@ -108,7 +108,8 @@ if(@pages > 0 && $_GET{'q'} ne $null){
 		}
 		$resultHTML .= "<dl class=\"${className}\">\n";
 		$resultHTML .= "<dt><a href=\"${path}\">${title}</a></dt>\n";
-		$resultHTML .= "<dd>${snippet}<span>${path} - ${size}KB</span></dd>\n";
+		# $resultHTML .= "<dd>${snippet}<span>${path} - ${size}KB</span></dd>\n";
+		$resultHTML .= "<dd>${snippet}<span>${path}</span></dd>\n";
 		$resultHTML .= "</dl>\n";
 		$resultHTML .= "</div>\n";
 	}
