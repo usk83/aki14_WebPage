@@ -285,7 +285,7 @@ function newAni(on, revease)
 			if(!revease[i])
 			{
 				$("#addedNew div div").eq(i).css("top", "-=1")
-				if($("#addedNew div div").eq(i).css("top") == "15px")
+				if($("#addedNew div div").eq(i).css("top") == "12px")
 				{
 					on[i+1] = true;
 				}
