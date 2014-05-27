@@ -710,6 +710,11 @@ div#___plusone_0 iframe
 /*連絡先情報*/
 
 /*左サイドバー*/
+#linkinpage h1
+{
+	text-indent: -16px;
+	padding-left: 36px;
+}
 #linkinpage h1:before
 {
 	content: '−';
