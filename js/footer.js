@@ -282,10 +282,6 @@ function newAni(on, revease, count)
 	{
 		if(on[i])
 		{
-			if(i == 0)
-			{
-				alert(count[0]);
-			}
 			if(!revease[i])
 			{
 				count[i]++;
