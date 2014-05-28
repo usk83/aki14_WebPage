@@ -1954,3 +1954,45 @@ dl.search_result dd span,dl.search_result_pickup dd span
 {
 	margin-top: 22px;
 }
+/***************************************************************/
+/*notfound.html*/
+/***************************************************************/
+#notFound ,#mailfrom header
+{
+	width: 100%;
+	min-width: 600px;
+}
+#notFound header #toppic
+{
+	width: 100%;
+}
+#notFound header #toppic img
+{
+	width: 100%;
+	max-width: 1280px;
+	height: auto;
+	margin: 0 auto;
+}
+#notFound #container
+{
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+
+	padding: 0 20px;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#notFound .contentsbox
+{
+	width: 100%;
+	max-width: 1280px;
+	min-width: 600px;
+	margin: 0 auto;
+	border-radius: 10px;
+	background: rgb(235, 237, 238);
+
+	behavior: url("ie-css3.htc");
+}

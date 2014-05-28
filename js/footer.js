@@ -313,7 +313,7 @@ function newAni(on, revease, count)
 		}
 	}
 
-	setTimeout('newAni(on, revease, count)', 15);
+	setTimeout(function(){newAni(on, revease, count);}, 15);
 }
 
 function newAnistart()
