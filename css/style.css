@@ -686,7 +686,7 @@ div#___plusone_0 iframe
 .contentsbox h1, .contentsbox p, .contentsbox h2, .contentsbox dt, .contentsbox dd
 {
 	/*androidのページの自動調整対策hack*/
-	background-image: url(androidhack.gif);
+	/*background-image: url(androidhack.gif);*/
 }
 
 #mc-main .contentsbox p
