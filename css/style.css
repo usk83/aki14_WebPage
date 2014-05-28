@@ -36,6 +36,13 @@
 	text-indent: 0!important;
 }
 
+/*強調設定*/
+.strongRed
+{
+	font-weight: bold!important;
+	color: #E60012!important;
+}
+
 
 /***************************************************************/
 /*ベース設定*/
@@ -1828,4 +1835,122 @@ dl.search_result dd span,dl.search_result_pickup dd span
 	color: #0E774A;
 	display: block;
 	font-size: 0.9em;
+}
+
+/***************************************************************/
+/*design_compe.html*/
+/***************************************************************/
+#compeDetail div.inner
+{
+	padding: 12px 22px;
+}
+#compeDetail div.inner p
+{
+	margin: 0px;
+	margin-top: 10px;
+}
+#compeDetail dt
+{
+	font-weight: bold;
+	margin-top: 5px;
+	font-size: 1.2em;
+}
+#compeDetail dt:first-child
+{
+	margin-top: 0;
+}
+#compeDetail dt:before
+{
+	content: "・";
+}
+#compeDetail dd
+{
+	padding-left: 1.2em;
+}
+#compeDetail table
+{
+	margin-top: -6px;
+	margin-bottom: -6px;
+}
+#compeDetail table tr:first-child
+{
+	height: 60px;
+	border-bottom: 1px solid #ccc;
+}
+#compeDetail table tr:last-child
+{
+	height: 37px;
+}
+#compeDetail table tr
+{
+	/*border-bottom: 1px solid #ccc;*/
+}
+#compeDetail table tr th, #compeDetail table tr td
+{
+	vertical-align: middle;
+}
+#compeDetail table th
+{
+	width: 220px;
+	font-weight: normal;
+	text-align: left;
+}
+#compeDetail table th:after
+{
+	float: right;
+	content: ":";
+}
+#compeDetail table td
+{
+	padding-left: 30px;
+}
+#compeSummary a
+{
+	width: 300px;
+	height: 205px;
+	display: inline-block;
+	margin-left: 22px;
+	background: #205ddc;
+}
+#compeSummary img
+{
+	width: 300px;
+	height: auto;
+	float: left;
+}
+#compeSummary img:hover
+{
+	opacity: 0.9;
+}
+#compeSummary span
+{
+	padding-left: 2.4em;
+}
+#logoDL #logoMaterial
+{
+	vertical-align: middle;
+}
+#logoDL #logoMaterial a:before
+{
+	content: url("../img/zipIcon.png");
+	vertical-align: -3px;
+	padding-right: 3px;
+}
+#logoDL ul
+ {
+ 	margin-top: -10px;
+ 	margin-left: 65px;
+ }
+#logoDL li:before
+{
+	content: '├';
+	padding-right: 3px;
+}
+#logoDL li:last-child:before
+{
+	content:  "└";
+}
+#logoDL p:last-child
+{
+	margin-top: 22px;
 }
