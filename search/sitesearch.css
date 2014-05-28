@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+form.sitesearch {
+	padding: 10px;
+	text-align: center;
+}
+div#search_result {
+	padding: 10px;
+}
+div#sitesearch_next_result_button {
+	color: #0000FF;
+	text-decoration: underline;
+	cursor: pointer;
+	text-align: center;
+	padding: 10px;
+	font-size: 12px;
+	background-color: #CCCCCC;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+div.sitesearch_hidden_result {
+	display: none;
+}
+p.search_result_stat {
+	padding: 10px;
+	background-color: #EEEEEE;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+p.search_default {
+	padding: 30px;
+	text-align: center;
+	font-size: 12px;
+}
+div.search_result_section {
+	clear: both;
+	padding: 0px 0px 15px 0px;
+}
+dl.search_result {
+	padding: 0px;
+	margin: 0px;
+}
+dl.search_result_pickup {
+	padding: 0px 0px 0px 90px;
+}
+div.search_result_thumbnail {
+	width: 80px;
+	height: 80px;
+	float: left;
+}
+dl.search_result dt,dl.search_result_pickup dt {
+	font-size: 14px;
+	padding: 5px 0px;
+	margin: 0px;
+}
+dl.search_result dd,dl.search_result_pickup dd {
+	font-size: 12px;
+	padding: 5px 0px 0px 0px;
+	margin: 0px;
+}
+dl.search_result dd span,dl.search_result_pickup dd span {
+	color: #0E774A;
+	display: block;
+	font-size: 10px;
+	padding: 5px 0px;
+}

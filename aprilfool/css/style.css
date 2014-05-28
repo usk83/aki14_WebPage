@@ -947,3 +947,21 @@ div#twitter.contentsbox
 	position: fixed!important;
 	z-index: 5;
 }
+
+
+/*aprilfool*/
+#bottom div:before
+{
+	content:"▷";
+}
+#gotoHP, #reload
+{
+	text-decoration: none;
+	/*color: #205ddc;*/
+	color: #1513ac;
+}
+#gotoHP:hover, #reload:hover
+{
+	color: #009eff;
+	cursor: pointer;
+}

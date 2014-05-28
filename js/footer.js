@@ -124,15 +124,217 @@ $(function()
 		$("#hn-logo img").css("opacity","0.7");
 		$(this).css("background", "#252525");
 		$(this).children("a").css("color","#eee");
-		$(this).children("a").css("font-weight","bold");
 		$("#hn-right a").css("color", "rgba(255, 255, 255, 0.5)");
 	});
 	$("#hn-nav li").mouseout(function()
 	{
 		$("#header-navi").css("background","#252525");
 		$("#hn-logo img").css("opacity","1");
-		$(this).css("background","none")
+		$(this).css("background","none");
 		$("#hn-nav a").css("color","#eee");
 		$("#hn-right a").css("color", "#fff");
 	});
 });
+
+// linkinpage.js
+// =====================================================================
+// ページ内リンク用
+// =====================================================================
+$(function(){
+	// #で始まるアンカーをクリックした場合に処理
+	$("a[href^=#]").click(function() {
+		if($(this).attr("href") != "#header")
+		{
+			// スクロールの速度
+			var speed = 400; // ミリ秒
+			// アンカーの値取得
+			var href= $(this).attr("href");
+			// 移動先を取得
+			var target = $(href === "#" || href === "" ? 'html' : href);
+			// 移動先を数値で取得
+			var position = target.offset().top - 52;
+			// スムーススクロール
+			$('body,html').animate({scrollTop:position}, speed, 'swing');
+
+			target.find("h1").animate(
+			{
+				'color': '#5574CA'
+			},
+			{
+				'duration': 200
+			})
+			.animate(
+			{
+				'color': '#fff'
+			},
+			{
+				'duration': 600
+			});
+
+			if(target.find("h1")[0] == undefined)
+			{
+				target.find("h2").animate(
+				{
+					'color': '#5574CA'
+				},
+				{
+					'duration': 200
+				})
+				.animate(
+				{
+					'color': '#323'
+				},
+				{
+					'duration': 600
+				});
+			}
+
+			return false;
+		}
+	});
+});
+
+// pagetop.js
+// =====================================================================
+// ページトップ用
+// =====================================================================
+$(function()
+{
+	var topBtn = $('#pagetop');
+	topBtn.stop().animate({'bottom' : '-60px'}, 200);
+	var showFlag = false;
+	if(document.body.scrollTop > 200)
+	{
+		topBtn.children("a").css("cursor", "pointer");
+		showFlag = true;
+		topBtn.stop().animate({'bottom' : '20px'}, 200);
+
+	}
+	//スクロールが200に達したらボタン表示
+	$(window).scroll(function ()
+	{
+		if ($(this).scrollTop() > 200)
+		{
+			if (showFlag === false)
+			{
+				topBtn.children("a").css("cursor", "pointer");
+				showFlag = true;
+				topBtn.stop().animate({'bottom' : '20px'}, 200);
+			}
+		}
+		else
+		{
+			if (showFlag)
+			{
+				showFlag = false;
+				topBtn.children("a").css("background", "#666");
+				topBtn.children("a").css("opacity", "0.6");
+				topBtn.children("a").css("cursor", "default");
+				topBtn.stop().animate({'bottom' : '-60px'}, 200);
+			}
+		}
+	});
+	//スクロールしてトップ
+	topBtn.click(function ()
+	{
+		if(showFlag)
+		{
+			$('body,html').animate({scrollTop: 0}, 500);
+		}
+		return false;
+	});
+	topBtn.children("a").hover(
+		function()
+		{
+			if(showFlag)
+			{
+				$(this).stop().animate({
+					'background' : '#999',
+					'opacity' : '1'
+				}, 300);
+			}
+		},
+		function()
+		{
+			if(showFlag)
+			{
+				$(this).stop().animate({
+					'background' : '#666',
+					'opacity' : '0.6'
+				}, 300);
+			}
+		}
+	);
+});
+
+// addNew.js
+// =====================================================================
+// 更新情報にNEW!!!追加用
+// =====================================================================
+(function addNew()
+{
+	$(".newInfo").after("<div id='addedNew'>←<div><div>N</div><div>E</div><div>W</div><div>!</div><div>!</div><div>!</div></div></div>");
+})();
+
+function newAni(on, revease, count)
+{
+	for(var i = 0; i < on.length; i++)
+	{
+		if(on[i])
+		{
+			if(!revease[i])
+			{
+				count[i]++;
+				$("#addedNew div div").eq(i).css("top", "-=1");
+				if(count[i] == 7)
+				{
+					on[i+1] = true;
+				}
+				else if(count[i] == 14)
+				{
+					revease[i] = true;
+				}
+			}
+			else if(revease[i])
+			{
+				count[i]++;
+				$("#addedNew div div").eq(i).css("top", "+=1");
+				if(count[i] == 28)
+				{
+					on[i] = false;
+					if(i == 5)
+					{
+						setTimeout('newAnistart()', 1000);
+						return;
+					}
+				}
+			}
+
+		}
+	}
+
+	setTimeout(function(){newAni(on, revease, count);}, 15);
+}
+
+function newAnistart()
+{
+	on = new Array(6);
+	revease = new Array(6);
+	count = new Array(6);
+	for(var i = 0; i < on.length; i++)
+	{
+		if(i == 0)
+		{
+			on[i] = true;
+		}
+		else
+		{
+			on[i] = false;
+			revease[i] = false;
+		}
+		count[i] = 0;
+	}
+	newAni(on, revease, count);
+}
+
+setTimeout("newAnistart()", 500);

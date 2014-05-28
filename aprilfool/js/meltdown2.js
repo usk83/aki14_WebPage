@@ -83,17 +83,23 @@ window.onload = function aprilfool(){
 		element.id = 'message';
 		document.getElementById("layer").appendChild(element);
 		$("#message").css({
-			"height": "98px",
-			"width": "1140px",
+			"height": "400px",
+			// "width": "1140px",
+			// "width": "1110px",
+			"width": "1162px",
 			"margin": "auto",
 			"top": "50%",
 			"left": "50%",
-			"margin": "-49px 0 0 -570px",
+			"margin": "-49px 0 0 -581px",
 			"font-size": "4em",
 			"font-weight": "bold",
 			"position": "fixed",
 			"z-index":  "11"
 		});
+		// $("#message p").css({
+		// 	"margin": "0",
+		// 	"background": "#f00"
+		// });
 
 		msgorigin="今年も秋祭をよろしくお願いします。";
 		cnt=0;
@@ -103,14 +109,83 @@ window.onload = function aprilfool(){
 			if(cnt-5 <= msgorigin.length)
 			{
 				msg=msgorigin.substring(0,cnt++);
-				document.getElementById("message").innerHTML=msg;
+				document.getElementById("message").innerHTML="&nbsp;" + msg;
 			}
 			else
 			{
 				clearInterval(timer);
-				location.href="http://akimatsuri.sfc.keio.ac.jp";
+				$("#message").animate
+				(
+					{top:"35%" },
+					{duration: 1500,
+					easing: "easeOutQuad",
+					complete: function(){AfterAprilFool();}}
+				);
 			}
 		}
+	}
+	function AfterAprilFool()
+	{
+		var element;
+		// element = "<p id='aprilfool'><span>2014/04/01 エイプリルフール&nbsp;&nbsp;</span></p>";
+		// $("#message").append(element);
+		// $("#aprilfool").css({
+		// 	"height": "98px",
+		// 	"font-size": "0.8em",
+		// 	"margin": "0 auto",
+		// 	"font-weight": "normal",
+		// 	"text-align": "center",
+		// 	"vertical-align": "baseline"
+		//
+
+
+		element = "<p id='aprilfool'><span>2014/04/01 エイプリルフールver.  </span></p>";
+		$("#message").append(element);
+		$("#aprilfool").css({
+			// "background": "#0f0",
+			"margin": "50px auto 30px auto",
+			"text-align": "center",
+			"font-size": "0.7em",
+			"opacity": "0"
+		});
+		$("#aprilfool span").css({
+			"padding-right": "40px"
+		});
+
+
+		element = "<div id='bottom' class='clearfix'><div><a href='http://akimatsuri.sfc.keio.ac.jp' id='gotoHP'>本当の秋祭HPはこちら</a></div><div><span id='reload' onclick='location.reload()'>ページリロード</span></div></div>";
+		$("#message").append(element);
+		$("#bottom").css({
+			"margin": "20px 0",
+			"font-size": "0.7em",
+			// "background": "#f00",
+			"opacity": "0"
+		});
+		$("#gotoHP").parent().css({
+			// "padding-left": "30px",
+			"width": "571px",
+			"text-align": "center",
+			"display": "table-cell"
+		});
+		$("#reload").parent().css({
+			"width": "591px",
+			"text-align": "center",
+			"display": "table-cell"
+		});
+
+		$("#aprilfool").delay(800).animate
+		(
+			{opacity:"1" },
+			{duration: 1000,
+			easing: "linear"}
+		);
+		$("#bottom").delay(2400).animate
+		(
+			{opacity:"1" },
+			{duration: "slow",
+			easing: "linear"}
+		);
+
 	}
 	function aftermeltdown()
 	{
