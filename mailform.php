@@ -326,6 +326,10 @@ else if($confirmDsp == 1){
 <html lang="ja">
 	<head>
 		<meta charset="utf-8">
+		<link rel="icon" href="img/icons/favicon.ico" type="image/vnd.microsoft.icon">
+		<link rel="apple-touch-icon" href="img/icons/apple-touch-icon.png">
+		<meta name="author" content="Yusuke Takahashi">
+		<meta name="keywords" content="秋祭,sfc,文化祭">
 		<title>お問い合わせ内容確認</title>
 		<link rel="stylesheet" href="css/html5reset-1.6.1.css">
 		<link rel="stylesheet" href="css/style.css">
@@ -412,6 +416,10 @@ if(($jumpPage == 0 && $sendmail == 1) || ($jumpPage == 0 && ($confirmDsp == 0 &&
 <html lang="ja">
 	<head>
 		<meta charset="utf-8">
+		<link rel="icon" href="img/icons/favicon.ico" type="image/vnd.microsoft.icon">
+		<link rel="apple-touch-icon" href="img/icons/apple-touch-icon.png">
+		<meta name="author" content="Yusuke Takahashi">
+		<meta name="keywords" content="秋祭,sfc,文化祭">
 		<title>お問い合わせ完了</title>
 		<link rel="stylesheet" href="css/html5reset-1.6.1.css">
 		<link rel="stylesheet" href="css/style.css">
