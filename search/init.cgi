@@ -10,7 +10,7 @@ $config{'dir'} = '../';
 @excluded_files = ('mailform.php','progress.html','ie-css3.htc','comingsoon.html');
 
 ## 参照したくないディレクトリの"パス"を書いてね。
-@excluded_dirs = ('/_2012/','/_2013/','/_2014backup/','/2014/','/aprilfool/','/ra/','/ra_core/','/search/','/parts/');
+@excluded_dirs = ('/_2012/','/_2013/','/_2014backup/','/2014/','/aprilfool/','/ra/','/ra_core/','/search/','/parts/', '/downloads/');
 
 ## 参照したくないディレクトリ名
 @excluded_dirs_name = ('img','images','js','admin','mobile','css');
@@ -19,7 +19,7 @@ $config{'dir'} = '../';
 $config{'cache'} = 'search.cache.cgi';
 
 ## インデックスキャッシュの有効期限 (単位：分)
-$config{'expiration'} = 60;
+$config{'expiration'} = 180;
 
 ## テンプレートファイルのパス
 $config{'template'} = 'search.tpl';
