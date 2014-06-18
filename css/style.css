@@ -1856,9 +1856,10 @@ section#getto #gettoContents
 /***************************************************************/
 /*participant.html*/
 /***************************************************************/
-#entryAgreement .DLdoc:before
+#entryAgreement a:before
 {
-	content: "▶";
+	content: url("../img/pdfIcon.png");
+	vertical-align: -3px;
 	padding-right: 3px;
 }
 #handoutList
