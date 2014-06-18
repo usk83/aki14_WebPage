@@ -1822,6 +1822,21 @@ section#getto #gettoContents
 /***************************************************************/
 /*participant.html*/
 /***************************************************************/
+#handoutList
+{
+	margin-top: -10px;
+	padding: 0px 22px 0px 22px;
+}
+#handoutList ol
+{
+	margin: 3px 0px 3px 42px;
+}
+#handoutList ul li:before
+{
+	content: "-";
+	padding-right: 3px;
+}
+
 #meeting1st p img
 {
 	width: 838px;
