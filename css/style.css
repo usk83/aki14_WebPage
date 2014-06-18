@@ -1856,6 +1856,11 @@ section#getto #gettoContents
 /***************************************************************/
 /*participant.html*/
 /***************************************************************/
+#entryAgreement .DLdoc:before
+{
+	content: "▶";
+	padding-right: 3px;
+}
 #handoutList
 {
 	margin-top: -10px;
