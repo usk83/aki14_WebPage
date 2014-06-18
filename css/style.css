@@ -37,7 +37,7 @@
 }
 
 /*強調設定*/
-.strongRed
+span.strong
 {
 	font-weight: bold!important;
 	color: #E60012!important;
@@ -710,7 +710,7 @@ div#___plusone_0 iframe
 }
 #linkinpage ul ul
 {
-	padding: 0px 0px 0px 1em;
+	padding: 0px 0px 0px 1.5em;
 }
 #linkinpage a
 {
@@ -1260,11 +1260,6 @@ div#___plusone_0 iframe
 #outlineContents .s-list p
 {
 	margin: 10px 5px 10px 82px;
-}
-#outlineContents .s-list p .strong
-{
-	font-weight: bold;
-	color: #E60012;
 }
 #outlineContents .s-list dd:last-child p
 {
@@ -1827,12 +1822,45 @@ section#getto #gettoContents
 /***************************************************************/
 /*participant.html*/
 /***************************************************************/
-#infoSession p img
+#meeting1st p img
 {
 	width: 838px;
 	height: auto;
 	float: left;
 	padding-bottom: 5px;
+}
+
+#documentsDL .inner
+{
+	padding: 0px 22px 12px 40px;
+}
+#documentsDL .DLdoc
+{
+	margin-bottom: 10px;
+}
+#documentsDL .DLdoc:last-child
+{
+	margin-bottom: 0px;
+}
+#documentsDL a:before
+{
+	content: url("../img/zipIcon.png");
+	vertical-align: -3px;
+	padding-right: 3px;
+}
+#documentsDL ul
+ {
+ 	margin-top: 2px;
+ 	margin-left: 25px;
+ }
+#documentsDL li:before
+{
+	content: '├';
+	padding-right: 3px;
+}
+#documentsDL li:last-child:before
+{
+	content:  "└";
 }
 
 /***************************************************************/
