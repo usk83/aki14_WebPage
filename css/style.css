@@ -495,27 +495,29 @@ div#___plusone_0 iframe
 {
 	margin-bottom: 0px;
 }
-#update-info #addedNew
+#update-info #addedNew, #update-info #addedImp
 {
 	font-weight: bold;
 	color: #E60012;
 	letter-spacing: 1px;
 	position: absolute;
 	top: -15px;
-	right: 80px;
+	right: 90px;
 }
-#update-info #addedNew > div
+#update-info #addedNew > div, #update-info #addedImp > div
 {
 	font-size: 1.2em;
 	height: 40px;
 	background: #00f;
 	position: relative;
 }
-#update-info #addedNew div div
+#update-info #addedNew div div, #update-info #addedImp div div
 {
 	padding-left: 1px;
 	position: absolute;
 }
+
+/*NEW*/
 #update-info #addedNew div div:nth-of-type(1)
 {
 	top: 19px;
@@ -545,6 +547,38 @@ div#___plusone_0 iframe
 {
 	top: 19px;
 	left: 82px;
+}
+
+/*募集中*/
+#update-info #addedImp div div:nth-of-type(1)
+{
+	top: 19px;
+	padding-left: 5px;
+}
+#update-info #addedImp div div:nth-of-type(2)
+{
+	top: 19px;
+	left: 25px;
+}
+#update-info #addedImp div div:nth-of-type(3)
+{
+	top: 19px;
+	left: 45px;
+}
+#update-info #addedImp div div:nth-of-type(4)
+{
+	top: 19px;
+	left: 68px;
+}
+#update-info #addedImp div div:nth-of-type(5)
+{
+	top: 19px;
+	left: 80px;
+}
+#update-info #addedImp div div:nth-of-type(6)
+{
+	top: 19px;
+	left: 90px;
 }
 
 /***************************************************************/
