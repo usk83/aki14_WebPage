@@ -37,7 +37,7 @@
 }
 
 /*強調設定*/
-.strongRed
+span.strong
 {
 	font-weight: bold!important;
 	color: #E60012!important;
@@ -495,27 +495,29 @@ div#___plusone_0 iframe
 {
 	margin-bottom: 0px;
 }
-#update-info #addedNew
+#update-info #addedNew, #update-info #addedImp
 {
 	font-weight: bold;
 	color: #E60012;
 	letter-spacing: 1px;
 	position: absolute;
 	top: -15px;
-	right: 80px;
+	right: 90px;
 }
-#update-info #addedNew > div
+#update-info #addedNew > div, #update-info #addedImp > div
 {
 	font-size: 1.2em;
 	height: 40px;
 	background: #00f;
 	position: relative;
 }
-#update-info #addedNew div div
+#update-info #addedNew div div, #update-info #addedImp div div
 {
 	padding-left: 1px;
 	position: absolute;
 }
+
+/*NEW*/
 #update-info #addedNew div div:nth-of-type(1)
 {
 	top: 19px;
@@ -545,6 +547,38 @@ div#___plusone_0 iframe
 {
 	top: 19px;
 	left: 82px;
+}
+
+/*募集中*/
+#update-info #addedImp div div:nth-of-type(1)
+{
+	top: 19px;
+	padding-left: 5px;
+}
+#update-info #addedImp div div:nth-of-type(2)
+{
+	top: 19px;
+	left: 25px;
+}
+#update-info #addedImp div div:nth-of-type(3)
+{
+	top: 19px;
+	left: 45px;
+}
+#update-info #addedImp div div:nth-of-type(4)
+{
+	top: 19px;
+	left: 68px;
+}
+#update-info #addedImp div div:nth-of-type(5)
+{
+	top: 19px;
+	left: 80px;
+}
+#update-info #addedImp div div:nth-of-type(6)
+{
+	top: 19px;
+	left: 90px;
 }
 
 /***************************************************************/
@@ -710,7 +744,7 @@ div#___plusone_0 iframe
 }
 #linkinpage ul ul
 {
-	padding: 0px 0px 0px 1em;
+	padding: 0px 0px 0px 1.5em;
 }
 #linkinpage a
 {
@@ -1260,11 +1294,6 @@ div#___plusone_0 iframe
 #outlineContents .s-list p
 {
 	margin: 10px 5px 10px 82px;
-}
-#outlineContents .s-list p .strong
-{
-	font-weight: bold;
-	color: #E60012;
 }
 #outlineContents .s-list dd:last-child p
 {
@@ -1827,12 +1856,66 @@ section#getto #gettoContents
 /***************************************************************/
 /*participant.html*/
 /***************************************************************/
-#infoSession p img
+#entryAgreement a:before
+{
+	content: url("../img/pdfIcon.png");
+	vertical-align: -3px;
+	padding-right: 3px;
+}
+#handoutList
+{
+	margin-top: -10px;
+	padding: 0px 22px 0px 22px;
+}
+#handoutList ol
+{
+	margin: 3px 0px 3px 42px;
+}
+#handoutList ul li:before
+{
+	content: "-";
+	padding-right: 3px;
+}
+
+#meeting1st p img
 {
 	width: 838px;
 	height: auto;
 	float: left;
 	padding-bottom: 5px;
+}
+
+#documentsDL .inner
+{
+	padding: 0px 22px 12px 40px;
+}
+#documentsDL .DLdoc
+{
+	margin-bottom: 10px;
+}
+#documentsDL .DLdoc:last-child
+{
+	margin-bottom: 0px;
+}
+#documentsDL a:before
+{
+	content: url("../img/zipIcon.png");
+	vertical-align: -3px;
+	padding-right: 3px;
+}
+#documentsDL ul
+ {
+ 	margin-top: 2px;
+ 	margin-left: 25px;
+ }
+#documentsDL li:before
+{
+	content: '├';
+	padding-right: 3px;
+}
+#documentsDL li:last-child:before
+{
+	content:  "└";
 }
 
 /***************************************************************/
