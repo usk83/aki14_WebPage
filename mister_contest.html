@@ -20,6 +20,7 @@
 <title>ミスターSFCコンテスト2014 | 第23回 慶應義塾大学秋祭 公式サイト</title>
 <link rel="stylesheet" href="css/html5reset-1.6.1.css">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/jquery.bxslider.css">
 <link rel="icon" href="img/icons/favicon.ico" type="image/vnd.microsoft.icon">
 <link rel="apple-touch-icon" href="img/icons/apple-touch-icon.png">
 <meta name="author" content="Yusuke Takahashi">
@@ -142,11 +143,11 @@
 
 <div id="toppic">
 	<div id="toppic_missmister" class="clearfix">
-		<div id="misterNo1"></div>
-		<div id="misterNo2"></div>
-		<div id="misterNo3"></div>
-		<div id="misterNo4"></div>
-		<div id="misterNo5"></div>
+		<div id="misterNo1" onclick="fadeoutContest(this)"></div>
+		<div id="misterNo2" onclick="fadeoutContest(this)"></div>
+		<div id="misterNo3" onclick="fadeoutContest(this)"></div>
+		<div id="misterNo4" onclick="fadeoutContest(this)"></div>
+		<div id="misterNo5" onclick="fadeoutContest(this)"></div>
 
 		<div id="misterMsg">
 			Choose your favorite.
@@ -206,10 +207,11 @@
 
 <!-- メイン記事 -->
 <div id="mc-main" class="clearfix">
-<!-- comingsoon -->
-<section id="comingsoon" class="contentsbox">
-	<h1>comingsoon</h1>
-	<p>comingsoon</p>
+
+<!-- missmisterContests -->
+<section id="missmisterContents" class="contentsbox">
+	<h1>Entry Name</h1>
+	<p>Profile</p>
 </section>
 
 </div>
@@ -254,6 +256,7 @@
 
 <script src="js/footer.js"></script>
 <script src="js/widgetfix.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
 
 <!-- アクセス解析用 -->
 <script type="text/javascript" src="ra/script.php">

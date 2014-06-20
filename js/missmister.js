@@ -50,7 +50,7 @@ function deleteMsg(id)
 	node.parentNode.removeChild(node);
 }
 
-// ページ読み込み後2秒後に実行
+// ページ読み込み後1.5秒後に実行
 function missmisterMsg()
 {
 	var id;
@@ -66,8 +66,49 @@ function missmisterMsg()
 	showMsg(id);
 }
 
-// missmisterMsg()を2秒後に実行
+// missmisterMsg()を1.5秒後に実行
 $(function()
 {
-	setTimeout("missmisterMsg()", 2000);
+	setTimeout("missmisterMsg()", 1500);
 });
+
+// 写真クリック時にページコンテンツ変更
+function fadeoutContest(ele)
+{
+	var id = ele.id;
+	var target = "missmister/" + id + ".html" + " #missmisterContents";
+
+	$("#mc-main").fadeOut(500, function(){changeContents(target)});
+}
+
+function changeContents(target)
+{
+	$("#mc-main").load(target);
+	setTimeout(function(){fadeinContents();}, 200);
+}
+
+function fadeinContents()
+{
+	$("#mc-main").fadeIn(500);
+	setTimeout("bxSlider()", 500);
+}
+
+// slideShow
+function bxSlider()
+{
+	$('.bxslider').bxSlider({
+		auto: true,
+		speed: 2000,
+		buildPager: function(slideIndex)
+		{
+			switch(slideIndex){
+				case 0:
+				return '<img src="img/event/missmister/missNo1/pic1-thumbnail.jpg">';
+				case 1:
+				return '<img src="img/event/missmister/missNo1/pic2-thumbnail.jpg">';
+				case 2:
+				return '<img src="img/event/missmister/missNo1/pic3-thumbnail.jpg">';
+			}
+		}
+	});
+}
