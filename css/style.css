@@ -1572,7 +1572,64 @@ section#getto #gettoContents
 /***************************************************************/
 /*event.html*/
 /***************************************************************/
-#missmister img
+#mm_announcement
+{
+	margin: 0px 40px;
+	padding: 10px 0px;
+}
+#missmister #miss
+{
+	float: left;
+	padding-bottom: 15px;
+}
+#missmister #mister
+{
+	float: right;
+}
+#mm_announcement img
+{
+	vertical-align: top;
+}
+#missmister #miss, #missmister #mister
+{
+	position: relative;
+}
+#missmister #miss div, #missmister #mister div
+{
+	height: 181px;
+	width: 540px;
+
+	color: #fff;
+	font-size: 1.6em;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+}
+#missmister #miss div:hover, #missmister #mister div:hover
+{
+	opacity: 1;
+	background: rgba(255, 255, 255, 0.3);
+	box-shadow: -2px -2px 8px 8px #fafafa, 2px 2px 8px 8px #fafafa;
+}
+#missmister #miss span
+{
+	background: #f17288;
+	position: absolute;
+	padding: 0px 10px;
+}
+#missmister #mister span
+{
+	background: #0e5ca7;
+	position: absolute;
+	padding: 0px 10px;
+}
+/*#missmister img
 {
 	width: 400px;
 	height: 562px;
@@ -1594,7 +1651,7 @@ section#getto #gettoContents
 #entryEnd span:last-child
 {
 	margin-left: 38px;
-}
+}*/
 
 
 /***************************************************************/
@@ -2040,4 +2097,53 @@ dl.search_result dd span,dl.search_result_pickup dd span
 	color: #0E774A;
 	display: block;
 	font-size: 0.9em;
+}
+
+/***************************************************************/
+/*miss_contest.html, mister_contest.html*/
+/***************************************************************/
+#toppic_missmister
+{
+	width: 1280px;
+	height: 428px;
+	position: relative;
+}
+#toppic_missmister [id*="No"]
+{
+	height: 428px;
+	width: 256px;
+	float: left;
+}
+#misterNo1{background: url(../img/event/misterNo1.png);}
+#misterNo2{background: url(../img/event/misterNo2.png);}
+#misterNo3{background: url(../img/event/misterNo3.png);}
+#misterNo4{background: url(../img/event/misterNo4.png);}
+#misterNo5{background: url(../img/event/misterNo5.png);}
+#missNo1{background: url(../img/event/missNo1.png);}
+#missNo2{background: url(../img/event/missNo2.png);}
+#missNo3{background: url(../img/event/missNo3.png);}
+#missNo4{background: url(../img/event/missNo4.png);}
+#missNo5{background: url(../img/event/missNo5.png);}
+
+#missMsg, #misterMsg
+{
+	position: absolute;
+	top: 307px;
+	left: 640px;
+	font-size: 5.0em;
+	margin-left: -450px;
+	padding: 0px 30px;
+
+	font-style: italic;
+
+	background: rgba(255, 255, 255, 0.7);
+	opacity: 0;
+}
+#missMsg
+{
+	color: #f17288;
+}
+#misterMsg
+{
+	color: #0e5ca7;
 }
