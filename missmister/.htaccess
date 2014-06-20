@@ -2,7 +2,3 @@ SetEnvIf Referer "^http://akimatsuri\.sfc\.keio\.ac\.jp" ref_ok
 order deny,allow
 deny from all
 allow from env=ref_ok
-
-<Files ~ "\.html$">
-allow from all
-</Files>
