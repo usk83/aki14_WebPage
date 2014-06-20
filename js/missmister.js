@@ -90,7 +90,7 @@ function changeContents(target)
 function fadeinContents()
 {
 	$("#mc-main").fadeIn(500);
-	setTimeout("bxSlider()", 500);
+	bxSlider();
 }
 
 // slideShow
