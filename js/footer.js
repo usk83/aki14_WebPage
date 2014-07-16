@@ -77,7 +77,6 @@ $(window).on("scroll", function()
 		js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
 		fjs.parentNode.insertBefore(js,fjs);
 	}
-	// window.setTimeout("hoge()", 10000);
 }
 (document,"script","twitter-wjs");
 
@@ -204,12 +203,11 @@ $(function()
 	var clicked = false;
 	topBtn.stop().animate({'bottom' : '-78px'}, 1000);
 	var showFlag = false;
-	if(document.body.scrollTop > 200)
+	if(document.body.scrollTop > 200 || document.documentElement.scrollTop > 200)
 	{
 		topBtn.children("a").css("cursor", "pointer");
 		showFlag = true;
 		topBtn.stop().animate({'bottom' : '0px'}, 300);
-
 	}
 	//スクロールが200に達したらボタン表示
 	$(window).scroll(function ()
@@ -253,12 +251,11 @@ $(function()
 				topBtn.animate({'bottom' : '-78px'}, 300);
 				showFlag = false;
 				clicked = false;
-				if(document.body.scrollTop > 200)
+				if(document.body.scrollTop > 200 || document.documentElement.scrollTop > 200)
 				{
 					topBtn.children("a").css("cursor", "pointer");
 					showFlag = true;
 					topBtn.stop().animate({'bottom' : '0px'}, 300);
-
 				}
 			});
 		}
