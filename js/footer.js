@@ -77,7 +77,6 @@ $(window).on("scroll", function()
 		js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
 		fjs.parentNode.insertBefore(js,fjs);
 	}
-	// window.setTimeout("hoge()", 10000);
 }
 (document,"script","twitter-wjs");
 
@@ -201,36 +200,38 @@ $(function(){
 $(function()
 {
 	var topBtn = $('#pagetop');
-	topBtn.stop().animate({'bottom' : '-60px'}, 200);
+	var clicked = false;
+	topBtn.stop().animate({'bottom' : '-78px'}, 1000);
 	var showFlag = false;
-	if(document.body.scrollTop > 200)
+	if(document.body.scrollTop > 200 || document.documentElement.scrollTop > 200)
 	{
 		topBtn.children("a").css("cursor", "pointer");
 		showFlag = true;
-		topBtn.stop().animate({'bottom' : '20px'}, 200);
-
+		topBtn.stop().animate({'bottom' : '0px'}, 300);
 	}
 	//スクロールが200に達したらボタン表示
 	$(window).scroll(function ()
 	{
-		if ($(this).scrollTop() > 200)
+		if (!clicked)
 		{
-			if (showFlag === false)
+			if ($(this).scrollTop() > 200)
 			{
-				topBtn.children("a").css("cursor", "pointer");
-				showFlag = true;
-				topBtn.stop().animate({'bottom' : '20px'}, 200);
+				if (showFlag === false)
+				{
+					topBtn.children("a").css("cursor", "pointer");
+					showFlag = true;
+					topBtn.stop().animate({'bottom' : '0px'}, 300);
+				}
 			}
-		}
-		else
-		{
-			if (showFlag)
+			else
 			{
-				showFlag = false;
-				topBtn.children("a").css("background", "#666");
-				topBtn.children("a").css("opacity", "0.6");
-				topBtn.children("a").css("cursor", "default");
-				topBtn.stop().animate({'bottom' : '-60px'}, 200);
+				if (showFlag)
+				{
+					showFlag = false;
+					topBtn.children("a").css("opacity", "0");
+					topBtn.children("a").css("cursor", "default");
+					topBtn.stop().animate({'bottom' : '-78px'}, 300);
+				}
 			}
 		}
 	});
@@ -239,7 +240,24 @@ $(function()
 	{
 		if(showFlag)
 		{
-			$('body,html').animate({scrollTop: 0}, 500);
+			clicked = true;
+			topBtn.animate({'bottom' : '-20px'}, 300);
+			$('body,html').delay(300).animate({scrollTop: 0}, 500);
+			topBtn.animate({'bottom' : '3000px'}, 2000, function()
+			{
+				topBtn.css("bottom", "-200");
+				topBtn.children("a").css("opacity", "0");
+				topBtn.children("a").css("cursor", "default");
+				topBtn.animate({'bottom' : '-78px'}, 300);
+				showFlag = false;
+				clicked = false;
+				if(document.body.scrollTop > 200 || document.documentElement.scrollTop > 200)
+				{
+					topBtn.children("a").css("cursor", "pointer");
+					showFlag = true;
+					topBtn.stop().animate({'bottom' : '0px'}, 300);
+				}
+			});
 		}
 		return false;
 	});
@@ -249,9 +267,8 @@ $(function()
 			if(showFlag)
 			{
 				$(this).stop().animate({
-					'background' : '#999',
 					'opacity' : '1'
-				}, 300);
+				}, 200);
 			}
 		},
 		function()
@@ -259,9 +276,8 @@ $(function()
 			if(showFlag)
 			{
 				$(this).stop().animate({
-					'background' : '#666',
-					'opacity' : '0.6'
-				}, 300);
+					'opacity' : '0'
+				}, 400);
 			}
 		}
 	);

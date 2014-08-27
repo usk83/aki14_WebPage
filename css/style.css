@@ -964,22 +964,18 @@ div#___plusone_0 iframe
 {
 	position: fixed;
 	bottom: -100px;
-	right: 20px;
-	font-size: 0.9em;
+	right: 0px;
 	z-index: 100;
+	background: url("../img/mohumohu/mohumohu.png");
 }
 #pagetop a
 {
-	background: #666;
-	text-decoration: none;
-	color: #fff;
-	opacity: 0.6;
 	width: 100px;
-	padding: 30px 0;
-	text-align: center;
+	height: 118px;
+	opacity: 0;
 	display: block;
-	border-radius: 5px;
 	cursor: default;
+	background: url("../img/mohumohu/mohumohu_hover.png");
 }
 #pagetop a:hover
 {
