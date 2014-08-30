@@ -16,17 +16,17 @@
 /*領域なし非表示の設定*/
 .none
 {
-	display: none !important;
+	display: none!important;
 }
 /*領域あり非表示の設定*/
 .hidden
 {
-	visibility: hidden !important;
+	visibility: hidden!important;
 }
 /*未完成部分に横棒*/
 .incomp
 {
-	text-decoration: line-through;
+	text-decoration: line-through!important;
 	opacity: 0.3;
 }
 
@@ -1449,6 +1449,39 @@ section#getto #gettoContents
 /***************************************************************/
 /*design_compe.html*/
 /***************************************************************/
+#compeDetail
+{
+	position: relative;
+}
+#compeDetail div.inner
+{
+	opacity: 0.5;
+}
+#compeDetail h1
+{
+	opacity: 0.5;
+}
+
+#compeDetail #compeEnd
+{
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	text-align: center;
+}
+#compeDetail #compeEnd p
+{
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	margin: 0;
+	/*margin-top: -84px;*/
+	margin-top: -95px;
+	font-size: 50px;
+	color: #e60012;
+}
 #compeDetail div.inner
 {
 	padding: 12px 22px;
@@ -1484,7 +1517,7 @@ section#getto #gettoContents
 #compeDetail table tr:first-child
 {
 	height: 60px;
-	border-bottom: 1px solid #ccc;
+	/*border-bottom: 1px solid #ccc;*/
 }
 #compeDetail table tr:last-child
 {
@@ -1564,6 +1597,32 @@ section#getto #gettoContents
 	margin-top: 22px;
 }
 
+#compeAward p
+{
+	text-align: center;
+	text-indent: 0!important;
+}
+#compeAward #compeAchiever
+{
+	width: 100%;
+	margin: 12px 0;
+	font-size: 1.4em;
+}
+#compeAward #compeAchiever span
+{
+	font-size: 50px;
+}
+#compeCover
+{
+	margin: 22px 0;
+}
+#compeCover div
+{
+	width: 250px;
+	height: 350px;
+	margin-left: 316px;
+	background: #ccc;
+}
 
 /***************************************************************/
 /*event.html*/
@@ -1584,7 +1643,7 @@ section#getto #gettoContents
 	display: inline-block;
 	width: 400px;
 	text-align: center;
-	color: #cc0000;
+	color: #e60012;
 	float: left;
 }
 #entryEnd span:last-child
