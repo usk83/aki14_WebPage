@@ -368,5 +368,5 @@ setTimeout("newAnistart()", 500);
 	}
 	remainingDays += 11 - dateObj.getDate();
 
-	document.getElementById("hf-contents").innerHTML = "<p>秋祭開催まで、あと<span>" + remainingDays + "</span>日</p>";
+	document.getElementById("hf-contents").innerHTML = "<p>＼ 秋祭開催まで、あと<span>" + remainingDays + "</span>日 ／</p>";
 })();
