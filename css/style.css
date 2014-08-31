@@ -1615,6 +1615,7 @@ section#getto #gettoContents
 #compeCover
 {
 	margin: 22px 0;
+	text-align: center;
 }
 #compeCover div
 {
@@ -1623,6 +1624,13 @@ section#getto #gettoContents
 	margin-left: 316px;
 	background: #ccc;
 }
+#compeCover img
+{
+	height: 350px;
+	margin: 12px 0;
+	border: 5px groove #999;
+}
+
 
 /***************************************************************/
 /*event.html*/
