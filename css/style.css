@@ -1612,7 +1612,7 @@ section#getto #gettoContents
 #compeAward #compeAchiever
 {
 	width: 100%;
-	margin: 12px 0;
+	margin: 16px 0;
 	font-size: 1.4em;
 }
 #compeAward #compeAchiever span
@@ -1621,7 +1621,7 @@ section#getto #gettoContents
 }
 #compeCover
 {
-	margin: 22px 0;
+	margin: 22px 0 0 0;
 	text-align: center;
 }
 #compeCover div
@@ -1634,7 +1634,7 @@ section#getto #gettoContents
 #compeCover img
 {
 	height: 350px;
-	margin: 12px 0;
+	margin-top: 12px;
 	border: 5px groove #999;
 }
 
