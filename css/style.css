@@ -168,6 +168,13 @@ iframe
 	background-size: 100%;
 	background-repeat: no-repeat;
 }
+#hf-contents span
+{
+	font-size: 40px;
+	vertical-align: -4px;
+	padding: 0 5px;
+	font-weight: bold;
+}
 #hf-contents a
 {
 	 text-decoration: none;
