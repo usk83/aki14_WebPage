@@ -1177,6 +1177,17 @@ div#___plusone_0 iframe
 {
 	float: right;
 }
+#greetings p #representativeImg
+{
+	float: right;
+	padding-left: 22px;
+}
+#greetings p #representativeImg img
+{
+	width: 180px;
+	border-radius: 10px;
+	float: left;
+}
 
 
 /***************************************************************/
