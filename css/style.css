@@ -1177,6 +1177,17 @@ div#___plusone_0 iframe
 {
 	float: right;
 }
+#greetings p #representativeImg
+{
+	float: right;
+	padding-left: 22px;
+}
+#greetings p #representativeImg img
+{
+	width: 180px;
+	border-radius: 10px;
+	float: left;
+}
 
 
 /***************************************************************/
@@ -2111,3 +2122,62 @@ dl.search_result dd span,dl.search_result_pickup dd span
 	display: block;
 	font-size: 0.9em;
 }
+/***************************************************************/
+/*privacypolicy.html*/
+/***************************************************************/
+#privacypolicy dl
+{
+	margin: 12px 22px;
+	counter-reset: dtList;
+}
+#privacypolicy dt
+{
+	margin-top: 12px;
+	font-weight: bold;
+}
+#privacypolicy dt:before
+{
+	counter-increment: dtList;
+	content: counter(dtList) ".";
+	padding-right: 5px;
+}
+#privacypolicy dd
+{
+	text-indent: 1em;
+}
+#privacypolicy #ppFooter
+{
+	padding-top: 10px;
+}
+#privacypolicy #enactment
+{
+	margin: 12px 22px;
+	text-align: center;
+}
+#privacypolicy #enactment th
+{
+	font-weight: normal;
+}
+#privacypolicy #enactment th:after
+{
+	content: ":";
+	float: right;
+	padding-left: 12px;
+	padding-right: 12px;
+}
+#privacypolicy #ppAddress
+{
+	padding-left: 1em;
+	text-indent: -1em;
+}
+#privacypolicy ul
+{
+	list-style-type: square;
+	list-style-position: inside;
+	margin-top: 12px;
+}
+#privacypolicy ul li
+{
+	margin-left: 5px;
+}
+
