@@ -795,7 +795,8 @@ div#___plusone_0 iframe
 }
 #mc-sponsors
 {
-	margin-top: 20px;
+	/*margin-top: 20px;*/
+	margin-top: 0;
 }
 
 /*中央メイン*/
@@ -1312,6 +1313,11 @@ div#___plusone_0 iframe
 #outlineContents .s-list dd:last-child p
 {
 	margin-bottom: 0;
+}
+
+#feslink
+{
+	margin-top: 20px;
 }
 
 
