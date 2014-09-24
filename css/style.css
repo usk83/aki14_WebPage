@@ -1958,7 +1958,13 @@ section#getto #gettoContents
 	padding-right: 3px;
 }
 
-#meeting1st p img
+/*終了した第一回総会*/
+#meeting1st > h1, #meeting1st > p, #meeting1st > div
+{
+	opacity: 0.5;
+}
+
+#meeting1st p img, #meeting2nd p img
 {
 	width: 838px;
 	height: auto;
@@ -1966,35 +1972,35 @@ section#getto #gettoContents
 	padding-bottom: 5px;
 }
 
-#documentsDL .inner
+#documentsDL .inner, #documentsDL2 .inner
 {
 	padding: 0px 22px 12px 40px;
 }
-#documentsDL .DLdoc
+#documentsDL .DLdoc, #documentsDL2 .DLdoc
 {
 	margin-bottom: 10px;
 }
-#documentsDL .DLdoc:last-child
+#documentsDL .DLdoc:last-child, #documentsDL2 .DLdoc:last-child
 {
 	margin-bottom: 0px;
 }
-#documentsDL a:before
+#documentsDL a:before, #documentsDL2 a:before
 {
 	content: url("../img/zipIcon.png");
 	vertical-align: -3px;
 	padding-right: 3px;
 }
-#documentsDL ul
+#documentsDL ul, #documentsDL2 ul
  {
  	margin-top: 2px;
  	margin-left: 25px;
  }
-#documentsDL li:before
+#documentsDL li:before, #documentsDL2 li:before
 {
 	content: '├';
 	padding-right: 3px;
 }
-#documentsDL li:last-child:before
+#documentsDL li:last-child:before, #documentsDL2 li:last-child:before
 {
 	content:  "└";
 }
