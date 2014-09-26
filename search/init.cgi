@@ -7,10 +7,10 @@
 $config{'dir'} = '../';
 
 ## サイト内検索で反映しないファイル名
-@excluded_files = ('mailform.php','progress.html','ie-css3.htc','comingsoon.html');
+@excluded_files = ('404.html','comingsoon.html','mailform.php','progress.html','ie-css3.htc');
 
 ## 参照したくないディレクトリの"パス"を書いてね。
-@excluded_dirs = ('/_2012/','/_2013/','/_2014backup/','/2014/','/aprilfool/','/ra/','/ra_core/','/search/','/parts/', '/downloads/');
+@excluded_dirs = ('/_2012/','/_2013/','/_2014backup/','/2014/','/aprilfool/','/downloads/','/parts/','/ra/','/ra_core/','/search/');
 
 ## 参照したくないディレクトリ名
 @excluded_dirs_name = ('img','images','js','admin','mobile','css');
