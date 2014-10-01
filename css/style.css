@@ -1621,21 +1621,6 @@ section#getto #gettoContents
 	margin-top: 22px;
 }
 
-#compeAward p
-{
-	text-align: center;
-	text-indent: 0!important;
-}
-#compeAward #compeAchiever
-{
-	width: 100%;
-	margin: 16px 0;
-	font-size: 1.4em;
-}
-#compeAward #compeAchiever span
-{
-	font-size: 50px;
-}
 #compeCover
 {
 	margin: 22px 0 0 0;
@@ -1654,6 +1639,25 @@ section#getto #gettoContents
 	margin-top: 12px;
 	border: 5px groove #999;
 }
+#compeAward #compeAchiever
+{
+	width: 100%;
+	margin: 16px 0;
+	font-size: 1.4em;
+	text-align: center;
+}
+#compeAward #compeAchiever span
+{
+	font-size: 50px;
+}
+#compeAward #compeComment
+{
+	padding: 0px 90px 10px 90px;
+	font-style: italic;
+	text-indent: 0;
+}
+
+
 
 
 /***************************************************************/
