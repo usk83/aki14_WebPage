@@ -1470,6 +1470,16 @@ section#getto #gettoContents
 {
 	border: 1px solid #2A3240;
 }
+#contactForm + hr
+{
+	margin: 0px 20px;
+	border-top: 1px solid #aaa;
+}
+#contactNotice p
+{
+	padding-left: 1em;
+	text-indent: -1em!important;
+}
 
 
 /***************************************************************/
