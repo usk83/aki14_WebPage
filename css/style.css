@@ -814,7 +814,8 @@ div#___plusone_0 iframe
 	margin: 12px 22px;
 }
 
-#summary dt, dd
+#summary dt,
+#summary dd
 {
 	display: inline-block;
 }
@@ -861,7 +862,8 @@ div#___plusone_0 iframe
 	padding-left: 30px;
 	padding-right: 15px;
 }
-#mc-address dt, dd
+#mc-address dt,
+#mc-address dd
 {
 	display: inline-block;
 	font-style: normal;
@@ -2035,6 +2037,67 @@ section#getto #gettoContents
 	content:  "└";
 }
 
+
+/***************************************************************/
+/*privacypolicy.html*/
+/***************************************************************/
+#privacypolicy dl
+{
+	margin: 12px 22px;
+	counter-reset: dtList;
+}
+#privacypolicy dt
+{
+	margin-top: 12px;
+	font-weight: bold;
+}
+#privacypolicy dt:before
+{
+	counter-increment: dtList;
+	content: counter(dtList) ".";
+	padding-right: 5px;
+}
+#privacypolicy dd
+{
+	text-indent: 1em;
+}
+#privacypolicy #ppFooter
+{
+	padding-top: 10px;
+}
+#privacypolicy #enactment
+{
+	margin: 12px 22px;
+	text-align: center;
+}
+#privacypolicy #enactment th
+{
+	font-weight: normal;
+}
+#privacypolicy #enactment th:after
+{
+	content: ":";
+	float: right;
+	padding-left: 12px;
+	padding-right: 12px;
+}
+#privacypolicy #ppAddress
+{
+	padding-left: 1em;
+	text-indent: -1em;
+}
+#privacypolicy ul
+{
+	list-style-type: square;
+	list-style-position: inside;
+	margin-top: 12px;
+}
+#privacypolicy ul li
+{
+	margin-left: 5px;
+}
+
+
 /***************************************************************/
 /*search.html*/
 /***************************************************************/
@@ -2158,62 +2221,26 @@ dl.search_result dd span,dl.search_result_pickup dd span
 	display: block;
 	font-size: 0.9em;
 }
+
+
 /***************************************************************/
-/*privacypolicy.html*/
+/*support.html*/
 /***************************************************************/
-#privacypolicy dl
+#fwFundraising p span
 {
-	margin: 12px 22px;
-	counter-reset: dtList;
-}
-#privacypolicy dt
-{
-	margin-top: 12px;
 	font-weight: bold;
 }
-#privacypolicy dt:before
-{
-	counter-increment: dtList;
-	content: counter(dtList) ".";
-	padding-right: 5px;
-}
-#privacypolicy dd
-{
-	text-indent: 1em;
-}
-#privacypolicy #ppFooter
-{
-	padding-top: 10px;
-}
-#privacypolicy #enactment
+#fwFundraising #totalDonation
 {
 	margin: 12px 22px;
-	text-align: center;
 }
-#privacypolicy #enactment th
+#fwFundraising #totalDonation dt,
+#fwFundraising #totalDonation dd
 {
-	font-weight: normal;
+	display: inline-block;
 }
-#privacypolicy #enactment th:after
+#fwFundraising #totalDonation dd
 {
-	content: ":";
-	float: right;
-	padding-left: 12px;
-	padding-right: 12px;
+	margin-left: 12px;
+	font-weight: bold;
 }
-#privacypolicy #ppAddress
-{
-	padding-left: 1em;
-	text-indent: -1em;
-}
-#privacypolicy ul
-{
-	list-style-type: square;
-	list-style-position: inside;
-	margin-top: 12px;
-}
-#privacypolicy ul li
-{
-	margin-left: 5px;
-}
-
