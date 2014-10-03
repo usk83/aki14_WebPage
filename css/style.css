@@ -1699,6 +1699,50 @@ section#getto #gettoContents
 	margin-left: 38px;
 }
 
+#planIntro
+{
+	width: 882px;
+	margin-top: 30px;
+}
+#planIntro ul li
+{
+	width: 294px;
+	display: inline-block;
+	float: left;
+	text-align: center;
+}
+
+#planIntro button
+{
+	width: 240px;
+	height: 44px;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+
+	margin: 5px 0;
+	border: none;
+	border-radius: 10px;
+	color: #fff;
+	background: #2a3240;
+
+	font-size: 1.4em;
+
+	position: relative;
+	z-index: 1;
+	behavior: url('ie-css3.htc');
+}
+
+#planIntro button:hover
+{
+	width: 246px;
+	height: 50px;
+	margin: 2px 0;
+	border: 3px solid #ccc;
+}
+
+
+
 
 /***************************************************************/
 /*freshman.html*/
