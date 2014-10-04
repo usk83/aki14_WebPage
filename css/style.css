@@ -838,6 +838,11 @@ div#___plusone_0 iframe
 	content: "・";
 }
 
+#announce
+{
+	margin-top: 20px;
+}
+
 #mc-address img
 {
 	vertical-align: top;
