@@ -1733,6 +1733,7 @@ section#getto #gettoContents
 
 	font-size: 1.4em;
 
+	cursor: pointer;
 	position: relative;
 	z-index: 1;
 	behavior: url('ie-css3.htc');
@@ -1743,7 +1744,7 @@ section#getto #gettoContents
 	width: 246px;
 	height: 50px;
 	margin: 2px 0;
-	border: 3px solid #ccc;
+	border: 3px solid #5574CA;
 }
 
 #eventDetail div.eventInnerLeft,
@@ -1820,6 +1821,10 @@ section#getto #gettoContents
 	font-size: 0.5em;
 	vertical-align: 2px;
 	padding-right: 5px;
+}
+#linkinevent a
+{
+	cursor: pointer;
 }
 
 /***************************************************************/
