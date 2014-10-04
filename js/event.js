@@ -1,7 +1,7 @@
 function loadEventDetail(place)
 {
 	var target = "";
-	target = "./event_detail.html #" + place;
+	target = "./event_detail.html #event_" + place;
 	$("#eventDetail").fadeOut(500, function(){putDetail(target);});
 	// $("#fuga").fadeTo(500, 0, function(){putDetail(target);});
 }

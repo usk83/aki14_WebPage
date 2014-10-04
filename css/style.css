@@ -1746,7 +1746,76 @@ section#getto #gettoContents
 	border: 3px solid #ccc;
 }
 
+#eventDetail div.eventInner
+{
+	margin: 0px 22px 12px 22px;
+}
+#eventDetail div.eventContents
+{
+	width: 408px;
+	/*height: 300px;*/
+	margin-top: 12px;
+	float: left;
+	display: inline-block;
+	background: #fff;
+}
+#eventDetail div.eventContents:nth-child(even)
+{
+	margin-left: 22px;
+}
+#eventDetail div.eventContents img
+{
+	width: 150px;
+	height: 150px;
+	padding-right: 12px;
+	float: left;
+	vertical-align: top;
+}
+#eventDetail div.eventContents h3
+{
+	margin-top: 7px;
+	border-bottom: 1px solid #000;
+}
+#eventDetail div.eventContents dl
+{
+	margin: 7px 12px 7px 0px;
+}
+#eventDetail div.eventContents dl dt:after
+{
+	content: "＞";
+}
+#eventDetail div.eventContents dl dt:before
+{
+	content: "＜";
+}
+#eventDetail div.eventContents dl dd
+{
+	padding-left: 170px;
+}
+#eventDetail div.eventContents .event_dl1
+{
+	margin-left: 12px;
+}
+#eventDetail div.eventContents .event_dl2
+{
+	margin-top: 24px;
+	margin-left: 12px;
+}
+#eventDetail div.eventContents dl .event_dl1 dd,
+#eventDetail div.eventContents dl .event_dl2 dd
+{
+	padding-left: 8px;
+}
 
+
+
+#eventDetail div.eventContents p
+{
+	background: #000;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
 
 
 /***************************************************************/
