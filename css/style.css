@@ -1746,22 +1746,24 @@ section#getto #gettoContents
 	border: 3px solid #ccc;
 }
 
-#eventDetail div.eventInner
+#eventDetail div.eventInnerLeft,
+#eventDetail div.eventInnerRight
+{
+	width: 408px;
+	display: inline-block;
+	float: left;
+}
+#eventDetail div.eventInnerLeft
 {
 	margin: 0px 22px 12px 22px;
 }
 #eventDetail div.eventContents
 {
 	width: 408px;
-	/*height: 300px;*/
 	margin-top: 12px;
 	float: left;
 	display: inline-block;
 	background: #fff;
-}
-#eventDetail div.eventContents:nth-child(even)
-{
-	margin-left: 22px;
 }
 #eventDetail div.eventContents img
 {
@@ -1794,6 +1796,10 @@ section#getto #gettoContents
 {
 	padding-left: 170px;
 }
+#eventDetail div.eventContents dl dd.mismisterdd
+{
+	padding-left: 164px;
+}
 #eventDetail div.eventContents .event_dl1
 {
 	margin-left: 12px;
@@ -1808,17 +1814,13 @@ section#getto #gettoContents
 {
 	padding-left: 8px;
 }
-
-
-
-#eventDetail div.eventContents p
+#eventDetail div.eventContents dl dd.linkofEvent:before
 {
-	background: #000;
-	width: 100%;
-	height: 100%;
-	margin: 0;
+	content: "＞";
+	font-size: 0.5em;
+	vertical-align: 2px;
+	padding-right: 5px;
 }
-
 
 /***************************************************************/
 /*freshman.html*/
