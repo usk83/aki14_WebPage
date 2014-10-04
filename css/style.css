@@ -1774,8 +1774,10 @@ section#getto #gettoContents
 #eventDetail div.eventContents h3
 {
 	margin-top: 7px;
+	margin-left: 150px;
 	border-bottom: 1px solid #000;
 }
+
 #eventDetail div.eventContents dl
 {
 	margin: 7px 12px 7px 0px;
