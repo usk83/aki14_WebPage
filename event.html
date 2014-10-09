@@ -106,7 +106,7 @@
 			</h1>
 		</div>
 		<nav id="hn-nav">
-		<h1 class="none">グローバルナビゲーション</h1>
+			<h1 class="none">グローバルナビゲーション</h1>
 			<ul>
 				<li><a href="./">TOP</a></li>
 				<li><a href="about.html">秋祭とは</a></li>
@@ -173,7 +173,14 @@
 		<h1>企画紹介</h1>
 		<ul>
 			<li><a href="#planOutline">企画概要</a></li>
-			<li><a href="#missmister">ミス・ミスターコンテスト</a></li>
+			<li id="linkinevent"><!--
+			 --><a onclick="loadEventDetail('summary','linkinpage')">企画紹介</a>
+				<ul>
+					<li><a onclick="loadEventDetail('stage','linkinpage')">ステージ</a></li>
+					<li><a onclick="loadEventDetail('outside','linkinpage')">屋外企画</a></li>
+					<li><a onclick="loadEventDetail('inside','linkinpage')">教室企画</a></li>
+				</ul>
+			</li>
 		</ul>
 	</aside>
 </div>
@@ -210,22 +217,23 @@
 <!-- 開催概要 -->
 <section id="planOutline" class="contentsbox">
 	<h1>企画概要</h1>
-	<p>秋祭では毎年、ミス・ミスターコンテストをはじめとする多彩な企画をとり行っています。今年もご来場いただいた皆様に満足していただけるような企画を用意してまいります。また、秋祭の終わり頃には、毎年恒例の花火の打ち上げも行いますので、ぜひ一度お越しいただければと思います。</p>
+	<p>秋祭では毎年、ミス・ミスターコンテストをはじめとする多彩な企画をとり行っています。今年もご来場いただいた皆様に満足していただけるような企画を用意してまいります。また、秋祭二日目19:00からは、毎年恒例の花火の打ち上げも行いますので、ぜひ一度秋祭にお越しください！</p>
 </section>
 
-<!-- ミス・ミスター -->
-<section id="missmister" class="contentsbox">
-	<h1>ミス・ミスターコンテスト</h1>
-	<p class="clearfix">
-		<img src="img/event/MissContest.jpg" alt="MissContest">
-		<img src="img/event/MisterContest.jpg" alt="MisterContest">
-	</p>
-	<p id="entryEnd" class="clearfix">
-		<span>募集は終了しました</span>
-		<span>募集は終了しました</span>
-	</p>
-</section>
 
+<!-- 企画紹介 -->
+<div id="planIntro">
+	<ul class="clearfix">
+		<li><button type="button" onclick="loadEventDetail('stage')">ステージ</button></li>
+		<li><button type="button" onclick="loadEventDetail('outside')">屋外企画</button></li>
+		<li><button type="button" onclick="loadEventDetail('inside')">教室企画</button></li>
+	</ul>
+</div>
+
+
+<section id="eventDetail" class="contentsbox">
+
+</section>
 
 </div>
 <!-- メイン記事終了 -->
@@ -264,6 +272,7 @@
 
 <!-- スクリプトの読み込み -->
 <script src="js/footer.js"></script>
+<script src="js/event.js"></script>
 <script src="js/widgetfix.js"></script>
 
 <!-- アクセス解析用 -->
