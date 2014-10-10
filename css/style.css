@@ -175,6 +175,12 @@ iframe
 	padding: 0 5px;
 	font-weight: bold;
 }
+#hf-contents span.nowopen
+{
+	font-size: 35px;
+	vertical-align: -2px;
+	font-weight: normal;
+}
 #hf-contents a
 {
 	 text-decoration: none;

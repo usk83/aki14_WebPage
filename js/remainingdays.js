@@ -1,5 +1,4 @@
 // 秋祭開催までの残り時間表示用スクリプト
-// 9月から前日までの対応のみ
 (function () {
 	dateObj = new Date();
 	var remainingDays = 0;
@@ -7,6 +6,16 @@
 		remainingDays += 30;
 	}
 	remainingDays += 11 - dateObj.getDate();
-
-	document.getElementById("hf-contents").innerHTML = "<p>＼ 秋祭開催まで、あと<span>" + remainingDays + "</span>日 ／</p>";
+	if (remainingDays > 0)
+	{
+		document.getElementById("hf-contents").innerHTML = "<p>＼ 秋祭開催まで、あと<span>" + remainingDays + "</span>日 ／</p>";
+	}
+	else if (remainingDays < -1)
+	{
+		document.getElementById("hf-contents").innerHTML = "<p>本年度の秋祭は無事終了しました</p>";
+	}
+	else
+	{
+		document.getElementById("hf-contents").innerHTML = "<p>＼ <span class='nowopen'>祝! 秋祭開催中!!!</span> ／</p>";
+	}
 })();
