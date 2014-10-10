@@ -2129,25 +2129,29 @@ section#getto #gettoContents
 
 #documentsDL .inner,
 #documentsDL2 .inner,
-#documentsDLf .inner
+#documentsDLf .inner,
+#documentsDLch .inner
 {
 	padding: 0px 22px 12px 40px;
 }
 #documentsDL .DLdoc,
 #documentsDL2 .DLdoc,
-#documentsDLf .DLdoc
+#documentsDLf .DLdoc,
+#documentsDLch .DLdoc
 {
 	margin-bottom: 10px;
 }
 #documentsDL .DLdoc:last-child,
 #documentsDL2 .DLdoc:last-child,
-#documentsDLf .DLdoc:last-child
+#documentsDLf .DLdoc:last-child,
+#documentsDLch .DLdoc:last-child
 {
 	margin-bottom: 0px;
 }
 #documentsDL a:before,
 #documentsDL2 a:before,
-#documentsDLf a:before
+#documentsDLf a:before,
+#documentsDLch a:before
 {
 	content: url("../img/zipIcon.png");
 	vertical-align: -3px;
@@ -2155,21 +2159,24 @@ section#getto #gettoContents
 }
 #documentsDL ul,
 #documentsDL2 ul,
-#documentsDLf ul
+#documentsDLf ul,
+#documentsDLch ul
  {
  	margin-top: 2px;
  	margin-left: 25px;
  }
 #documentsDL li:before,
 #documentsDL2 li:before,
-#documentsDLf li:before
+#documentsDLf li:before,
+#documentsDLch li:before
 {
 	content: '├';
 	padding-right: 3px;
 }
 #documentsDL li:last-child:before,
 #documentsDL2 li:last-child:before,
-#documentsDLf li:last-child:before
+#documentsDLf li:last-child:before,
+#documentsDLch li:last-child:before
 {
 	content:  "└";
 }
